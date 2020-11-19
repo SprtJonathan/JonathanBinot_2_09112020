@@ -7,6 +7,7 @@
     align-content: center;
     font-family: "Raleway", sans-serif;
     font-weight: 500;
+    font-size: 40px;
     padding: 0%;
     margin: 0%;
     overflow-x: auto;
@@ -36,13 +37,28 @@
     font-weight: 700;
   }
 
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: space-around;
+  }
+
   li {
     list-style: none;
-    border-bottom: 2px;
-    border-color: grey;
+    border-bottom: 5px solid;
+    border-color: #F2F2F2;
+    padding: .5em;
   }
 
   li:active {
+    color: #0065fc;
+    border-color: #0065fc;
+    background-color: transparent;
+  }
+
+  li:hover {
     color: #0065fc;
     border-color: #0065fc;
   }
@@ -82,9 +98,10 @@
   /* CSS de la barre de recherche de localisation */
   .location-box {
     display: flex;
+    align-content: space-around;
     flex-wrap: nowrap;
-    border: 1px solid #f2f2f2;
-    border-radius: 20px;
+    border: .1em solid #f2f2f2;
+    border-radius: 1em;
     width: 100%;
   }
 
@@ -92,14 +109,14 @@
     background-color: #f2f2f2;
     border: 0px;
     padding: 1em 1em;
-    border-radius: 20px 0px 0px 20px;
-    font-size: 18px;
+    border-radius: 1em 0px 0px 1em;
+    font-size: 50px;
   }
 
   form.location-box input[type="text"] {
     font-family: Raleway, sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 50px;
     color: black;
     float: left;
     border: 0px;
@@ -113,8 +130,8 @@
     border: 0px;
     padding: 1em;
     color: white;
-    border-radius: 20px;
-    font-size: 18px;
+    border-radius: 1em;
+    font-size: 50px;
   }
 
   #loc-search-button:active {
