@@ -208,16 +208,10 @@
 
   .most-popular {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: stretch;
-    align-content: space-between;
-    margin: 15px;
-  }
-  
-  .marseille-hostings
-  {
-
+    align-items: center;
+    align-content: flex-end;
+    width: 90%;
+    margin: 1em auto 1em auto;
   }
 
   .hosting-offers {
@@ -559,5 +553,203 @@
     padding: .7em 1em .7em 1em;
   }
 
+  #hostings
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 90%;
+    margin: auto;
+  }
+
+  .popular-hostings {
+    background-color: #f2f2f2;
+    background-size: cover;
+    width: 30%;
+    order: 2;
+    border-radius: 2em;
+    margin-left: 50px;
+  }
+
+  .most-popular {
+    display: flex;
+    align-items: center;
+    align-content: flex-end;
+    width: 80%;
+    margin: 1em auto 1em auto;
+  }
+
+  .hosting-offers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    margin: 1em auto 1em auto;
+    width: 80%;
+    background-color: white;
+    border-radius: 2em;
+    padding: 0.3em;
+    box-shadow: 5px 5px 5px #F1F1F1;
+  }
+
+  .hosting-offers img {
+    object-fit: cover;
+    height: 9em;
+    width: 9em;
+    margin-right: 1em;
+    border-radius: 1.9em 0% 0% 1.9em;
+  }
+
+  .hosting-offers div {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+  }
+  
+  .marseille-hostings
+  {
+    order: 1;
+    background-color: #f2f2f2;
+    border-radius: 2em;
+    width: 60%;
+  }
+
+  .available-offers
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+    margin: auto;
+  }
+
+  /* Hébergements */
+
+  #hostings h1 {
+    text-align: left;
+    width: 90%;
+  }
+
+  .marseille-hostings h1{
+    margin-left: 5%;
+  }
+
+  .available-hostings {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 27%;
+    margin: 15px auto 15px auto;
+    background-color: white;
+    padding: 0.3em;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px #f2f2f2;
+  }
+
+  .available-hostings img {
+    object-fit: cover;
+    height: 7.5em;
+    width: 100%;
+    margin-right: 2em;
+    border-radius: 20px 20px 0% 0%;
+  }
+
+  .offers-description
+  {
+    font-size: 18px;
+    line-height: 1em;
+    margin: .5em;
+  }
+
+  .offers-description h3 {
+    padding: 0px;
+    margin-top: .1em;
+  }
+
+  .offers-description p {
+    margin-top: .5em;
+    margin-bottom: .25em;
+  }
+
+  .offers-description span {
+    margin-top: .3em;
+  }
+  
+  /* Notes des offres */
+  .stars-rating {
+    font-size: 15px;
+    color: #f2f2f2;
+  }
+
+  .checked {
+    color: #0065fe;
+  }
+
+  .more-button {
+    font-family: Raleway, sans-serif;
+    text-align: left;
+    font-weight: 700;
+    font-size: 25px;
+    margin: 3em 0em 0em 5%;
+  }
+
+  /* Activités */
+  #activities {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    margin: 0%;
+    padding: 5%;
+    width: 90%;
+  }
+
+  #activities h1 {
+    text-align: left;
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  .activities-location {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2em;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px #f2f2f2;
+  }
+
+  .activities-location h3 {
+    margin: 1em;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .activities-location img {
+    object-fit: cover;
+    height: 9em;
+    width: 100%;
+    margin-right: 2em;
+    border-radius: 45px 45px 0% 0%;
+  }
+
+  footer {
+    background-color: #f2f2f2;
+  }
+
+  footer div {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 85%;
+    margin: auto;
+  }
+
+  footer a {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 2em;
+  }
   
 }
