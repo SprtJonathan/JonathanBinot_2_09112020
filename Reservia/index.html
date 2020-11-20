@@ -12,14 +12,14 @@
 <body>
     <!-- Header de la page, incluant le menu de navigation et le bouton d'inscription -->
     <header>
-        <a href="#filters"><img src="./src/images/logo/Reservia.svg" class="website-logo"></a>
+        <img src="./src/images/logo/Reservia.svg" class="website-logo">
         <nav>
             <ul>
                 <li><a href="#hostings">Hébergements</a></li>
                 <li><a href="#activities">Activités</a></li>
             </ul>
         </nav>
-        <a href="">S'inscrire</a>
+        <a class="register" href="">S'inscrire</a>
     </header>
 
     <!-- Section réservée aux filtres de la page afin d'affiner sa recherche -->
@@ -207,7 +207,7 @@
 
     <!-- Section regroupant les activités disponibles à Marseille -->
     <section id="activities">
-        <h1>Activités à Marseille</h1>
+        <!--<h1>Activités à Marseille</h1>
         <a href="" class="activities-location">
             <img class="vieux-port" src="./src/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
             <h3>Vieux Port</h3>
@@ -232,7 +232,61 @@
         <a href="" class="activities-location">
             <img class="parc-longchamp" src="./src/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
             <h3>Parc Longchamp</h3>
-        </a>
+        </a>-->
+
+        <table>
+            <caption>
+                <h1>Activités à Marseille</h1>
+            </caption>
+            <tr>
+                <td rowspan="2">
+                    <a href="" class="activities-location">
+                        <img class="vieux-port"
+                            src="./src/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+                        <h3>Vieux Port</h3>
+                    </a>
+                </td>
+
+                <td>
+                    <a href="" class="activities-location">
+                        <img class="fort-pomegues" src="./src/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+                        <h3>Fort de Pomègues</h3>
+                    </a>
+                </td>
+
+                <td rowspan="2">
+                    <a href="" class="activities-location">
+                        <img class="parc-calanques"
+                            src="./src/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
+                        <h3>Parc National des Calanques</h3>
+                    </a>
+                </td>
+
+                <td>
+                    <a href="" class="activities-location">
+                        <img class="dame-garde" src="./src/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+                        <h3>Notre-Dame-de-la-Garde</h3>
+                    </a>
+                </td>
+            </tr>
+
+            <tr>                
+                <td>
+                    <a href="" class="activities-location">
+                        <img class="iles-frioul" src="./src/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
+                        <h3>Îles du Frioul</h3>
+                    </a>
+                </td>
+
+                <td>
+                    <a href="" class="activities-location">
+                        <img class="parc-longchamp" src="./src/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
+                        <h3>Parc Longchamp</h3>
+                    </a>
+                </td>
+            </tr>
+
+        </table>
     </section>
 
     <!-- Section à propos du site -->

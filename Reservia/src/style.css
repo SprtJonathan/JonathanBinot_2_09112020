@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900;1000&display=swap");
 
 /* CSS de la page pour les écrans dont la largeur fait au maximum 1280px */
 @media screen and (max-width: 1023px) {
@@ -10,33 +10,34 @@
     font-size: 40px;
     padding: 0%;
     margin: 0%;
+    margin-top: 0%;
+    padding-top: 0%;
     width: 100wv;
   }
 
   /* CSS du header de la page */
   header {
     display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-top: 0%;
+    padding-top: 0%;
   }
 
-  header :nth-child(1) {
-    order: 1;
-    align-items: flex-start;
+  .website-logo {
+    width: 5em;
   }
 
-  header :nth-child(2) {
-    order: 3;
-    flex-wrap: wrap;
-  }
-
-  header :nth-child(3) {
+  .register {
     order: 2;
-    align-items: flex-end;
     font-family: "Raleway", bold, sans-serif;
     color: #0065fc;
     font-weight: 700;
   }
 
   nav ul {
+    order: 1;
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -387,10 +388,13 @@
   header {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    align-content: space-around;
-    margin-top: 0%;
+    width: 90%;
+    margin: auto;
+  }
+
+  .website-logo
+  {
+    width: 20%;
   }
 
   header :nth-child(3) {
@@ -405,6 +409,7 @@
     flex-wrap: nowrap;
     align-items: center;
     align-content: space-around;
+    margin-top: 0%;
   }
 
   li {
@@ -503,9 +508,9 @@
     content: "Rechercher";
   }
 
-  #loc-search-button:active {
-    background-color: #f2f2f2;
-    color: black;
+  #loc-search-button:hover {
+    background-color: #deebff;
+    color: #0065fc;
   }
 
   .filters-title {
@@ -539,6 +544,17 @@
     width: 20px;
     height: 20px;
     margin: auto;
+  }
+  
+  .filters-hosting button:hover {
+    background-color: #deebff;
+    cursor: pointer;
+  }
+
+  .filters-hosting button i:hover {
+    color: #deebff;
+    background-color: #0065fc;
+    cursor: pointer;
   }
 
   #filters p {
@@ -620,7 +636,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    align-content: space-between;
+    align-content: space-evenly;
     margin: auto;
   }
 
@@ -632,7 +648,7 @@
   }
 
   .marseille-hostings h1{
-    margin-left: 5%;
+    margin-left: 1em;
   }
 
   .available-hostings {
@@ -640,7 +656,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 27%;
-    margin: 15px auto 15px auto;
+    margin: 1em auto 1em auto;
     background-color: white;
     padding: 0.3em;
     border-radius: 25px;
@@ -695,6 +711,19 @@
   }
 
   /* Activités */
+
+  /* Tableau des activités */
+
+  table {
+    border-collapse: collapse;
+  }
+
+  td, th /* Mettre une bordure sur les td ET les th */
+{
+    border: 1px solid black;
+}
+
+  /* Bloc des activités */
   #activities {
     display: flex;
     flex-direction: row;
@@ -706,7 +735,7 @@
 
   #activities h1 {
     text-align: left;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 700;
   }
 
@@ -716,22 +745,23 @@
     width: 100%;
     margin-bottom: 2em;
     background-color: white;
-    border-radius: 50px;
+    border-radius: 25px;
     box-shadow: 5px 5px 5px #f2f2f2;
+    
   }
 
   .activities-location h3 {
     margin: 1em;
-    font-size: 40px;
+    height: 1em;
+    font-size: 1em;
     font-weight: 700;
   }
 
   .activities-location img {
     object-fit: cover;
-    height: 9em;
     width: 100%;
     margin-right: 2em;
-    border-radius: 45px 45px 0% 0%;
+    border-radius: 20px 20px 0% 0%;
   }
 
   footer {
