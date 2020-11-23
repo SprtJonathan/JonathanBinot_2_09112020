@@ -18,21 +18,19 @@
   /* CSS du header de la page */
   header {
     display: flex;
-    flex-direction: row;
-    width: 90%;
-    margin-top: 0%;
-    padding-top: 0%;
-  }
-
-  .website-logo {
-    width: 5em;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    align-content: stretch;
+    margin: auto;
+    padding-top: 2em;
   }
 
   .register {
-    order: 2;
     font-family: "Raleway", bold, sans-serif;
     color: #0065fc;
     font-weight: 700;
+    text-align: end;
+    padding-right: 1em;
   }
 
   nav ul {
@@ -41,15 +39,17 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center;
-    align-content: space-around;
+    align-self: stretch;
+    align-content: space-between;
+    padding: 0%;
   }
 
   li {
     list-style: none;
     border-bottom: 5px solid;
-    border-color: #F2F2F2;
-    padding: .5em;
+    border-color: #f2f2f2;
+    padding: 0.5em;
+    width: 100%;
   }
 
   li:active {
@@ -102,7 +102,7 @@
     display: flex;
     align-content: space-around;
     flex-wrap: nowrap;
-    border: .1em solid #f2f2f2;
+    border: 0.1em solid #f2f2f2;
     border-radius: 50px;
     width: fit-content;
   }
@@ -138,9 +138,9 @@
   }
 
   #loc-search-button::after {
-    font-family: "Font Awesome 5 Free"; 
+    font-family: "Font Awesome 5 Free";
     font-size: 50px;
-    font-weight: 700; 
+    font-weight: 700;
     content: "\f002";
   }
 
@@ -164,7 +164,7 @@
   .filters-hosting button {
     font-family: Raleway, sans-serif;
     background-color: white;
-    border: .1em solid #f2f2f2;
+    border: 0.1em solid #f2f2f2;
     border-radius: 5em;
     font-size: 40px;
     font-weight: 700;
@@ -187,9 +187,9 @@
 
   #filters p i {
     color: #0065fc;
-    border: .3em solid #f2f2f2;
+    border: 0.3em solid #f2f2f2;
     border-radius: 50%;
-    font-size: .8em;
+    font-size: 0.8em;
     padding: 10px 20px 10px 20px;
   }
 
@@ -225,7 +225,7 @@
     background-color: white;
     border-radius: 50px;
     padding: 0.3em;
-    box-shadow: 5px 5px 5px #F1F1F1;
+    box-shadow: 5px 5px 5px #f1f1f1;
   }
 
   .hosting-offers h3 {
@@ -281,24 +281,23 @@
     border-radius: 45px 45px 0% 0%;
   }
 
-  .offers-description
-  {
+  .offers-description {
     line-height: 1em;
-    margin: .5em;
+    margin: 0.5em;
   }
 
   .offers-description h3 {
     padding: 0px;
-    margin-top: .1em;
+    margin-top: 0.1em;
   }
 
   .offers-description p {
-    margin-top: .5em;
-    margin-bottom: .25em;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
   }
 
   .offers-description span {
-    margin-top: .3em;
+    margin-top: 0.3em;
   }
 
   .more-button {
@@ -319,9 +318,14 @@
     width: 90%;
   }
 
- /* Activités tableau pour affichage desktop */ 
-  #activities-table {
+  /* Activités tableau pour affichage desktop */
+
+  .activities-table {
     display: none;
+  }
+
+  .activities-flex {
+    display: block;
   }
 
   #activities h1 {
@@ -373,9 +377,6 @@
   }
 }
 
-
-
-
 /* CSS de la page pour les écrans dont la largeur fait au minimum 1280px */
 @media screen and (min-width: 1024px) {
   body {
@@ -391,24 +392,24 @@
 
   /* CSS du header de la page */
   header {
+    background-image: url("./images/logo/Reservia.svg");
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-position: left;
     display: flex;
     flex-direction: row;
     width: 90%;
     margin: auto;
   }
 
-  .website-logo
-  {
-    width: 20%;
-  }
-
-  header :nth-child(3) {
+  header :nth-child(2) {
     font-family: "Raleway", bold, sans-serif;
     color: #0065fc;
     font-weight: 700;
   }
 
   nav ul {
+    float: right;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -420,7 +421,7 @@
   li {
     list-style: none;
     border-top: 3px solid;
-    border-color: #F2F2F2;
+    border-color: #f2f2f2;
     padding: 1em 1.5em 1em 1.5em;
   }
 
@@ -474,7 +475,7 @@
     display: flex;
     align-content: space-around;
     flex-wrap: nowrap;
-    border: .1em solid #f2f2f2;
+    border: 0.1em solid #f2f2f2;
     border-radius: 20px;
     width: fit-content;
   }
@@ -516,6 +517,7 @@
   #loc-search-button:hover {
     background-color: #deebff;
     color: #0065fc;
+    cursor: pointer;
   }
 
   .filters-title {
@@ -533,7 +535,7 @@
   .filters-hosting button {
     font-family: Raleway, sans-serif;
     background-color: white;
-    border: .1em solid #f2f2f2;
+    border: 0.1em solid #f2f2f2;
     border-radius: 5em;
     font-size: 20px;
     font-weight: 700;
@@ -550,7 +552,7 @@
     height: 20px;
     margin: auto;
   }
-  
+
   .filters-hosting button:hover {
     background-color: #deebff;
     cursor: pointer;
@@ -568,14 +570,13 @@
 
   #filters p i {
     color: #0065fc;
-    border: .1em solid #f2f2f2;
+    border: 0.1em solid #f2f2f2;
     border-radius: 50%;
-    font-size: .8em;
-    padding: .7em 1em .7em 1em;
+    font-size: 0.8em;
+    padding: 0.7em 1em 0.7em 1em;
   }
 
-  #hostings
-  {
+  #hostings {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -610,7 +611,7 @@
     background-color: white;
     border-radius: 2em;
     padding: 0.3em;
-    box-shadow: 5px 5px 5px #F1F1F1;
+    box-shadow: 5px 5px 5px #f1f1f1;
   }
 
   .hosting-offers img {
@@ -626,17 +627,15 @@
     flex-direction: column;
     align-content: space-between;
   }
-  
-  .marseille-hostings
-  {
+
+  .marseille-hostings {
     order: 1;
     background-color: #f2f2f2;
     border-radius: 2em;
     width: 60%;
   }
 
-  .available-offers
-  {
+  .available-offers {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -652,7 +651,7 @@
     width: 90%;
   }
 
-  .marseille-hostings h1{
+  .marseille-hostings h1 {
     margin-left: 1em;
   }
 
@@ -676,27 +675,26 @@
     border-radius: 20px 20px 0% 0%;
   }
 
-  .offers-description
-  {
+  .offers-description {
     font-size: 18px;
     line-height: 1em;
-    margin: .5em;
+    margin: 0.5em;
   }
 
   .offers-description h3 {
     padding: 0px;
-    margin-top: .1em;
+    margin-top: 0.1em;
   }
 
   .offers-description p {
-    margin-top: .5em;
-    margin-bottom: .25em;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
   }
 
   .offers-description span {
-    margin-top: .3em;
+    margin-top: 0.3em;
   }
-  
+
   /* Notes des offres */
   .stars-rating {
     font-size: 15px;
@@ -725,24 +723,25 @@
     width: 90%;
   }
 
-  td, th /* Mettre une bordure sur les td ET les th */
-{
+  td, th /* Mettre une bordure sur les td ET les th */ {
     border: 1px solid black;
-}
+  }
 
   /* Bloc des activités */
-  #activities-table {
+  #activities {
     display: flex;
-    flex-direction: row;
-    align-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
     margin: 0%;
     padding: 5%;
     width: 90%;
+    overflow: hidden;
   }
 
-  #activities
-  {
-    display: none;
+  .activities-table {
+    display: block;
   }
 
   #activities-table h1 {
@@ -755,12 +754,51 @@
     display: flex;
     object-fit: fill;
     flex-direction: column;
-    width: 90%;
+    width: 20em;
     margin-bottom: 2em;
     background-color: white;
     border-radius: 25px;
-    margin: auto;    
+    margin: auto;
     box-shadow: 5px 5px 5px #f2f2f2;
+  }
+
+  .activities-location:nth-child(1)
+  {
+    align-self: stretch;
+    height: 100%;
+  }
+
+  .activities-location:nth-child(2)
+  {
+    height: 275px;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+
+  .activities-location:nth-child(3)
+  {
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .activities-location:nth-child(4)
+  {
+    align-self: stretch;
+    height: 100%;
+  }
+
+  .activities-location:nth-child(5)
+  {
+    height: 243px;
+    overflow: hidden;
+    margin-bottom: 7px;
+  }
+
+  .activities-location:nth-child(6)
+  {
+    height: 243px;
+    overflow: hidden;
+    margin-bottom: 7px;
   }
 
   .activities-location h3 {
@@ -772,13 +810,26 @@
 
   .activities-location img {
     object-fit: cover;
-    width: 100%;
     margin-right: 2em;
     border-radius: 20px 20px 0% 0%;
+    width: 100%;
+    height: 70%;
   }
 
   footer {
     background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+    margin: auto;
+    padding-left: 10%;
+  }
+
+  footer h3 {
+    font-size: 20px;
+    padding: auto;
+    z-index: 2;
   }
 
   footer div {
@@ -789,10 +840,14 @@
     margin: auto;
   }
 
+  .global-footer-div {
+    display: block;
+    margin: auto;
+  }
+
   footer a {
     font-weight: 400;
-    font-size: 35px;
+    font-size: 15px;
     line-height: 2em;
   }
-  
 }
