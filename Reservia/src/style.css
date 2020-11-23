@@ -309,7 +309,7 @@
     margin: 2em 0em 1em 0em;
   }
 
-  /* Activités */
+  /* Activités affichage mobile */
   #activities {
     display: flex;
     flex-direction: column;
@@ -317,6 +317,11 @@
     margin: 0%;
     padding: 5%;
     width: 90%;
+  }
+
+ /* Activités tableau pour affichage desktop */ 
+  #activities-table {
+    display: none;
   }
 
   #activities h1 {
@@ -726,7 +731,7 @@
 }
 
   /* Bloc des activités */
-  #activities {
+  #activities-table {
     display: flex;
     flex-direction: row;
     align-content: space-between;
@@ -735,7 +740,12 @@
     width: 90%;
   }
 
-  #activities h1 {
+  #activities
+  {
+    display: none;
+  }
+
+  #activities-table h1 {
     text-align: left;
     font-size: 30px;
     font-weight: 800;
