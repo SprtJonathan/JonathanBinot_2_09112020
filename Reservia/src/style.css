@@ -176,6 +176,12 @@ form.location-box input[type="text"] {
   color: black;
 }
 
+#filters .filters-buttons {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
 .filters-title {
   font-weight: 800;
   font-size: 17px;
@@ -197,14 +203,17 @@ form.location-box input[type="text"] {
   font-size: 15px;
   font-weight: 700;
   margin: 0.5em 0.5em 0.5em 0px;
-  padding: 0% 1em 0% 0%;
+  padding: 0px 5px 0px;
 }
 
 .filters-hosting button i {
   color: #0065fc;
   background-color: #deebff;
-  padding: 1em;
   border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  height: 25px;
+  align-items: center;
 }
 
 #filters div {
@@ -298,6 +307,7 @@ form.location-box input[type="text"] {
   flex-direction: column;
   align-content: space-between;
   margin: auto;
+  margin-left: 5px;
 }
 
 /* Notes des offres */
@@ -466,29 +476,55 @@ footer a {
   /* Partie CSS des filtres */
 
   /* CSS de la barre de recherche de localisation */
+  
   .location-box {
-    width: 40%;
+    width: 25%;
   }
 
   #loc-search-button {
     border-radius: 0px 10px 10px 0px;
   }
 
-  #loc-search-button:active {
+  #loc-search-button::after {
+    font-family: Raleway, sans-serif;
+    content: "Rechercher";
+  }
+
+  #loc-search-button:hover {
     background-color: #f2f2f2;
     color: black;
+    cursor: pointer;
+  }
+
+  #filters .filters-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    line-height: 0;
+  }
+
+  #filters .filters-buttons h2 {
+    margin-right: 25px;
+  }
+
+  .filters-hosting button{
+    margin-right: 25px;
   }
 
   .filters-hosting button:hover {
     background-color: #deebff;
   }
 
+  .filters-hosting button i {
+    color: white;
+  }
+
   .filters-hosting button i:hover {
-    color: #deebff;
+    color: white;
     background-color: #0065fc;
   }
 
-  #filters div {
+  #filters .hostings-number {
     align-self: flex-start;
   }
 
@@ -496,6 +532,7 @@ footer a {
   #hostings {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 95vw;
     margin: auto;
   }
@@ -506,74 +543,113 @@ footer a {
     border-radius: 25px;
     margin-left: 10px;
   }
+
+  .hosting-offers
+  {
+    width: 80%;
+    margin-bottom: 15px;
+    transition: transform .2s; /* Animation */
+  }
+
+  .hosting-offers:hover {
+    transform: scale(1.1);
+  }
+
+  .hosting-description {
+    flex-wrap: wrap;
+    padding-right: 5px;
+  }
   
   /* Hébergements */
 
   .marseille-hostings {
-    width: 60%;
     background-color: #F2F2F2;
     border-radius: 25px;
-    padding: 15px;
+    padding: 15px;    
+    margin: 10px;
+    width: 60vw;
+    padding-bottom: 35px;
+  }
+
+  .marseille-hostings h2 {
+    margin-left: 35px;
+  }
+
+  .available-offers {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .available-hostings {
+    width: 15vw;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: transform .2s; /* Animation */
+  }
+
+  .available-hostings:hover {
+    transform: scale(1.1);
+  }
+
+  .more-button {
+    padding-top: 35px;
+    margin: 35px 35px;
+  }
+
+  /* Activités */
+
+  #activities {
+    padding-top: 15px;
+  }
+  
+  #activities article {
     display: flex;
     flex-direction: row;
   }
 
-  .available-hostings {
-    width: 25%;
+  #activities article a img{
+    height: 24vw;
   }
 
-  .available-hostings img {
-    object-fit: cover;
-    height: 7.5em;
-    width: 100%;
-    margin-right: 2em;
-    border-radius: 15px 15px 0% 0%;
+  #activities article .pomegues-frioul .fort-pomegues{
+    height: 12vw;
   }
 
-  .offers-description {
-    line-height: 1em;
-    margin: 0.5em;
+  #activities article .pomegues-frioul .iles-frioul{
+    height: 7vw;
   }
 
-  .offers-description h3 {
-    padding: 0px;
-    margin-top: 0.5em;
+  #activities article .garde-longchamp .dame-garde{
+    height: 7vw;
   }
 
-  .offers-description p {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+  #activities article .garde-longchamp .parc-longchamp{
+    height: 12vw;
   }
 
-  .more-button {
-    font-family: Raleway, sans-serif;
-    text-align: left;
-    font-weight: 700;
-    font-size: 18px;
+  #activities a {
+    width: 20vw;
+    margin-left: 0%;
+    transition: transform .2s; /* Animation */
   }
 
-  /* Activités */
-  #activities {
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    margin: 10px auto;
-    padding: 5%;
-    width: 90%;
+  #activities a:hover {
+    transform: scale(1.1);
   }
 
-  #activities h2 {
-    text-align: left;
-    font-size: 25px;
-    font-weight: 700;
-    margin-top: 25px;
-    margin-bottom: 20px;
-    margin-left: 0px;
-  }
-
-  #activities figure {
+  #activities div {
+    width: 20vw;
     margin: auto;
-    margin-bottom: 25px;
+  }
+
+  #activities div figure {
+    transition: transform .2s; /* Animation */
+  }
+
+  #activities div figure:hover {
+    transform: scale(1.1);
   }
 
   .activities-location {
@@ -583,6 +659,7 @@ footer a {
     background-color: white;
     border-radius: 20px;
     box-shadow: 5px 5px 5px #f2f2f2;
+    margin: 0px 15px 0px 0px;
   }
 
   .activities-location h3 {
