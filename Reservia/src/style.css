@@ -321,15 +321,15 @@ form.location-box input[type="text"] {
 
 /* Images spécifiques de chaque offre populaire - Affichage images mobile */
 .hotel-soleil {
-  content: url("./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+  content: url("/src/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
 }
 
 .coeur-eau {
-  content: url("./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+  content: url("/src/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
 }
 
 .bleu-blanc {
-  content: url("./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+  content: url("/src/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
 }
 
 .hosting-offers figcaption {
@@ -384,27 +384,27 @@ form.location-box input[type="text"] {
 
 /* Images spécifiques de chaque offre - Affichage images mobile */
 .cannebiere {
-  content: url("./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+  content: url("/src/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
 }
 
 .hotel-port {
-  content: url("./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+  content: url("/src/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
 }
 
 .hotel-mouettes {
-  content: url("./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+  content: url("/src/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
 }
 
 .hotel-mer {
-  content: url("./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+  content: url("/src/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
 }
 
 .auberge-panier {
-  content: url("./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+  content: url("/src/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
 }
 
 .hotel-amina {
-  content: url("./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+  content: url("/src/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
 }
 
 /* Fin des images */
@@ -662,15 +662,15 @@ footer a {
 
   /* Images spécifiques de chaque offre populaire - Affichage images mobile */
   .hotel-soleil {
-    content: url("./images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    content: url("/src/images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
   }
 
   .coeur-eau {
-    content: url("./images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    content: url("/src/images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg");
   }
 
   .bleu-blanc {
-    content: url("./images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    content: url("/src/images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
   }
 
   /* Hébergements */
@@ -716,27 +716,27 @@ footer a {
 
   /* Images spécifiques de chaque offre - Affichage images mobile */
   .cannebiere {
-    content: url("./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    content: url("/src/images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
   }
 
   .hotel-port {
-    content: url("./images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    content: url("/src/images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
   }
 
   .hotel-mouettes {
-    content: url("./images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    content: url("/src/images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg");
   }
 
   .hotel-mer {
-    content: url("./images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    content: url("/src/images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
   }
 
   .auberge-panier {
-    content: url("./images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    content: url("/src/images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
   }
 
   .hotel-amina {
-    content: url("./images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    content: url("/src/images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
   }
 
   /* Fin des images */
