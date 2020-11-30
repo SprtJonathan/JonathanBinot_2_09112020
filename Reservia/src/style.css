@@ -478,6 +478,33 @@ form.location-box input[type="text"] {
   border-radius: 15px 15px 0% 0%;
 }
 
+/* Images spécifiques de chaque activité - Affichage images mobile */
+.vieux-port {
+  content: url("../src/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+}
+
+.fort-pomegues {
+  content: url("../src/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+}
+
+.iles-frioul {
+  content: url("../src/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+}
+
+.parc-calanques {
+  content: url("../src/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+}
+
+.dame-garde {
+  content: url("../src/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+}
+
+.parc-longchamp {
+  content: url("../src/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+}
+
+/* Fin des images */
+
 footer {
   background-color: #f2f2f2;
   padding-top: 35px;
@@ -765,6 +792,33 @@ footer a {
   #activities article a img {
     height: 24vw;
   }
+
+  /* Images spécifiques de chaque activité - Affichage images mobile */
+.vieux-port {
+  content: url("../src/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+}
+
+.fort-pomegues {
+  content: url("../src/images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+}
+
+.iles-frioul {
+  content: url("../src/images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+}
+
+.parc-calanques {
+  content: url("../src/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+}
+
+.dame-garde {
+  content: url("../src/images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+}
+
+.parc-longchamp {
+  content: url("../src/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+}
+
+/* Fin des images */
 
   #activities article .pomegues-frioul .fort-pomegues {
     height: 12vw;
