@@ -67,7 +67,7 @@ li {
   margin: auto;
 }
 
-li:active > a{
+li:active > a {
   color: #0065fc;
   border-color: #0065fc;
 }
@@ -134,6 +134,7 @@ h3 {
   border: 2px solid #f2f2f2;
   border-radius: 10px;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 #user-position {
@@ -146,6 +147,8 @@ h3 {
 
 #user-position i {
   margin: auto;
+  width: 35px;
+  text-align: center;
 }
 
 form.location-box input[type="text"] {
@@ -184,7 +187,6 @@ form.location-box input[type="text"] {
 .filters-title {
   font-weight: 800;
   font-size: 17px;
-  text-align: left;
   margin-left: 0px;
   margin-top: 25px;
   margin-right: 80vw;
@@ -196,15 +198,18 @@ form.location-box input[type="text"] {
 }
 
 .filters-hosting button {
+  display: flex;
+  align-items: center;
   font-family: Raleway, sans-serif;
   background-color: white;
   border: 2px solid #f2f2f2;
-  border-left:1px solid transparent;
+  border-left: 1px solid transparent;
   border-radius: 5em;
   font-size: 15px;
   font-weight: 700;
   margin: 0.5em 0.5em 0.5em 0px;
-  padding: 0px 10px 0px 0px;
+  padding: 0px 40px 0px 0px;
+  white-space: nowrap;
 }
 
 .filters-hosting button i {
@@ -214,7 +219,10 @@ form.location-box input[type="text"] {
   border: 0px solid;
   border-radius: 50%;
   padding: 15px;
-  margin: 0%;
+  margin: 0% 10% 0% 0%;
+  width: 16px;
+  text-align: center;
+  white-space: nowrap;
 }
 
 /* Partie CSS des hébergements populaires */
@@ -240,8 +248,12 @@ form.location-box input[type="text"] {
   border-radius: 50%;
   font-size: 12px;
   font-weight: 600;
-  padding: 2px 7px 2px 7px;
+  padding: 4px 3px 1px 3px;
   margin-right: 5px;
+  height: 16px;
+  width: 16px;
+  text-align: center;
+  align-content: center;
 }
 
 .hostings-number h2 {
@@ -307,6 +319,19 @@ form.location-box input[type="text"] {
   border-radius: 15px 0% 0% 15px;
 }
 
+/* Images spécifiques de chaque offre populaire - Affichage images mobile */
+.hotel-soleil {
+  content: url("/src/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+}
+
+.coeur-eau {
+  content: url("/src/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+}
+
+.bleu-blanc {
+  content: url("/src/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+}
+
 .hosting-offers figcaption {
   display: flex;
   flex-direction: column;
@@ -356,6 +381,33 @@ form.location-box input[type="text"] {
   margin-right: 2em;
   border-radius: 15px 15px 0% 0%;
 }
+
+/* Images spécifiques de chaque offre - Affichage images mobile */
+.cannebiere {
+  content: url("/src/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+}
+
+.hotel-port {
+  content: url("/src/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+}
+
+.hotel-mouettes {
+  content: url("/src/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+}
+
+.hotel-mer {
+  content: url("/src/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+}
+
+.auberge-panier {
+  content: url("/src/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+}
+
+.hotel-amina {
+  content: url("/src/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+}
+
+/* Fin des images */
 
 .offers-description {
   line-height: 1em;
@@ -459,9 +511,10 @@ footer a {
     padding-top: 0px;
     flex-wrap: nowrap;
     width: 95vw;
+    justify-content: space-around;
   }
 
-  .website-logo{
+  .website-logo {
     margin-left: 0px;
   }
 
@@ -472,9 +525,9 @@ footer a {
   nav {
     max-width: 400px;
     margin-top: 0px;
-    align-self: flex-end;
+    margin-left: 55vw;
   }
-  
+
   nav ul {
     width: 400px;
     text-align: center;
@@ -484,8 +537,9 @@ footer a {
     border-top: 3px solid;
     border-color: #f2f2f2;
     border-bottom: 0px transparent;
-    padding: 30px 30px 30px 30px;
-    transition: ease-out .2s;
+    padding: 2.5vw 0px 2.5vw 0px;
+    text-align: center;
+    transition: ease-out 0.2s;
   }
 
   li:active > a {
@@ -497,6 +551,10 @@ footer a {
     border-color: #0065fc;
   }
 
+  h1 {
+    font-size: 23px;
+  }
+
   #filters {
     width: 95vw;
   }
@@ -504,14 +562,19 @@ footer a {
   /* Partie CSS des filtres */
 
   /* CSS de la barre de recherche de localisation */
-  
+
   .location-box {
-    width: 25%;
+    width: 30%;
+    border-radius: 18px;
   }
-  
+
+  #user-position {
+    border-radius: 15px 0px 0px 15px;
+  }
+
   #loc-search-button {
-    border-radius: 0px 10px 10px 0px;
-    transition: ease-out .2s;
+    border-radius: 0px 17px 17px 0px;
+    transition: ease-out 0.2s;
   }
 
   #loc-search-button::after {
@@ -529,11 +592,11 @@ footer a {
     margin-right: 25px;
   }
 
-  .filters-hosting button{
+  .filters-hosting button {
     margin-right: 35px;
     cursor: pointer;
-    padding-right: 25px;
-    transition: ease-out .2s;
+    transition: ease-out 0.2s;
+    font-size: 18px;
   }
 
   .filters-hosting button:hover {
@@ -547,6 +610,7 @@ footer a {
 
   #filters .hostings-number {
     align-self: flex-start;
+    font-size: 16px;
   }
 
   /* Partie CSS des hébergements populaires */
@@ -566,14 +630,25 @@ footer a {
     order: 2;
     width: 30%;
     border-radius: 25px;
-    margin-left: 10px;
+    margin-left: 5px;
   }
 
-  .hosting-offers
-  {
+  .hosting-offers {
     width: 80%;
-    margin-bottom: 15px;
-    transition: transform .2s; /* Animation */
+    margin-bottom: 2.5vw;
+    transition: transform 0.2s; /* Animation */
+  }
+
+  .hosting-offers h3 {
+    font-size: 1.3vw;
+  }
+
+  .hosting-offers p {
+    font-size: 1.1vw;
+  }
+
+  .hosting-offers img {
+    height: 120px;
   }
 
   .hosting-offers:hover {
@@ -584,20 +659,33 @@ footer a {
     flex-wrap: wrap;
     padding-right: 5px;
   }
-  
+
+  /* Images spécifiques de chaque offre populaire - Affichage images mobile */
+  .hotel-soleil {
+    content: url("/src/images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+  }
+
+  .coeur-eau {
+    content: url("/src/images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg");
+  }
+
+  .bleu-blanc {
+    content: url("/src/images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+  }
+
   /* Hébergements */
 
   .marseille-hostings {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     border-radius: 25px;
-    padding: 15px;    
-    margin: 10px 10px 10px 0px;
-    width: 60vw;
+    padding: 15px;
+    margin: 0px 10px 0px 0px;
+    width: 62vw;
     padding-bottom: 35px;
   }
 
   .marseille-hostings h2 {
-    margin-left: 35px;
+    margin-left: 16px;
   }
 
   .available-offers {
@@ -606,13 +694,52 @@ footer a {
     margin: auto;
   }
 
+  .available-offers h3 {
+    font-size: 1.3vw;
+  }
+
+  .available-offers p {
+    font-size: 1.1vw;
+  }
+
   .available-hostings {
-    width: 15vw;
+    width: 17vw;
     margin: auto;
     margin-bottom: 10px;
     margin-top: 10px;
-    transition: transform .2s; /* Animation */
+    transition: transform 0.2s; /* Animation */
   }
+
+  .available-hostings img {
+    height: 8vw;
+  }
+
+  /* Images spécifiques de chaque offre - Affichage images mobile */
+  .cannebiere {
+    content: url("/src/images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+  }
+
+  .hotel-port {
+    content: url("/src/images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+  }
+
+  .hotel-mouettes {
+    content: url("/src/images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+  }
+
+  .hotel-mer {
+    content: url("/src/images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+  }
+
+  .auberge-panier {
+    content: url("/src/images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+  }
+
+  .hotel-amina {
+    content: url("/src/images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+  }
+
+  /* Fin des images */
 
   .available-hostings:hover {
     transform: scale(1.1);
@@ -629,41 +756,41 @@ footer a {
     padding: 15px 0px;
     width: 95vw;
   }
-  
+
   #activities article {
     display: flex;
     flex-direction: row;
   }
 
-  #activities article a img{
+  #activities article a img {
     height: 24vw;
   }
 
-  #activities article .pomegues-frioul .fort-pomegues{
+  #activities article .pomegues-frioul .fort-pomegues {
     height: 12vw;
   }
 
-  #activities article .pomegues-frioul .iles-frioul{
+  #activities article .pomegues-frioul .iles-frioul {
     height: 7vw;
   }
 
-  #activities article .garde-longchamp .dame-garde{
+  #activities article .garde-longchamp .dame-garde {
     height: 7vw;
   }
 
-  #activities article .garde-longchamp .parc-longchamp{
+  #activities article .garde-longchamp .parc-longchamp {
     height: 12vw;
     margin-right: 0px;
   }
 
-  #activities article .garde-longchamp{
+  #activities article .garde-longchamp {
     margin-right: 0px;
   }
 
   #activities a {
     width: 20vw;
     margin-left: 0%;
-    transition: transform .2s; /* Animation */
+    transition: transform 0.2s; /* Animation */
   }
 
   #activities a:hover {
@@ -676,7 +803,7 @@ footer a {
   }
 
   #activities div figure {
-    transition: transform .2s; /* Animation */
+    transition: transform 0.2s; /* Animation */
   }
 
   #activities div figure:hover {
