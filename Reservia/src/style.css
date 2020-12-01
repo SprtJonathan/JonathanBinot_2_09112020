@@ -208,7 +208,7 @@ form.location-box input[type="text"] {
   font-size: 15px;
   font-weight: 700;
   margin: 0.5em 0.5em 0.5em 0px;
-  padding: 0px 40px 0px 0px;
+  padding: 0px 35px 0px 0px;
   white-space: nowrap;
 }
 
@@ -304,6 +304,7 @@ form.location-box input[type="text"] {
 
 .hosting-offers h3 {
   font-size: 16px;
+  padding-right: 16px;
 }
 
 .hosting-offers p {
@@ -313,8 +314,8 @@ form.location-box input[type="text"] {
 
 .hosting-offers img {
   object-fit: cover;
-  height: 9em;
-  width: 8em;
+  height: 10em;
+  width: 10em;
   margin-right: 1em;
   border-radius: 15px 0% 0% 15px;
 }
@@ -376,7 +377,7 @@ form.location-box input[type="text"] {
 
 .available-hostings img {
   object-fit: cover;
-  height: 7.5em;
+  height: 9em;
   width: 100%;
   margin-right: 2em;
   border-radius: 15px 15px 0% 0%;
@@ -472,7 +473,7 @@ form.location-box input[type="text"] {
 
 .activities-location img {
   object-fit: cover;
-  height: 9em;
+  height: 10em;
   width: 100%;
   margin-right: 2em;
   border-radius: 15px 15px 0% 0%;
@@ -481,26 +482,32 @@ form.location-box input[type="text"] {
 /* Images spécifiques de chaque activité - Affichage images mobile */
 .vieux-port {
   content: url("../src/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+  object-position: 100% 20%;
 }
 
 .fort-pomegues {
   content: url("../src/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+  object-position: 100% 45%;
 }
 
 .iles-frioul {
   content: url("../src/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+  object-position: 100% 20%;
 }
 
 .parc-calanques {
   content: url("../src/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+  object-position: 100% 20%;
 }
 
 .dame-garde {
   content: url("../src/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+  object-position: 100% 20%;
 }
 
 .parc-longchamp {
   content: url("../src/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+  object-position: 100% 30%;
 }
 
 /* Fin des images */
@@ -532,8 +539,338 @@ footer a {
   margin-left: 0px;
 }
 
+/* Fin du code CSS Principal. La suite concerne les différentes tailles d'écrans*/
+/*////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////*/
+/* Code dédié aux écrans d'une résolution minimale de 768px */
+
+@media (min-width: 768px) {
+  
+
+  #filters {
+    width: 95vw;
+  }
+
+  /* Partie CSS des filtres */
+
+  /* CSS de la barre de recherche de localisation */
+
+  .location-box {
+    width: fit-content;
+    border-radius: 18px;
+  }
+
+  .filters-title {
+    margin-right: 60%px;
+  }
+
+  .filters-hosting button {
+    margin-right: 10px;
+    cursor: pointer;
+    transition: ease-out 0.2s;
+    font-size: 14px;
+  }
+
+  .filters-hosting button:hover {
+    background-color: #deebff;
+  }
+
+  .filters-hosting button i:hover {
+    color: white;
+    background-color: #0065fc;
+  }
+
+  /* Partie CSS des hébergements populaires */
+  #hostings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 95vw;
+    margin: auto;
+  }
+
+  .hostings-number {
+    margin: 2em 50vw 2em 0px;
+  }
+
+  .popular-hostings {
+    order: 0;
+    width: 95vw;
+    border-radius: 25px;
+  }
+
+  .hosting-offers {
+    width: 70%;
+    margin-bottom: 2.5vw;
+    transition: transform 0.2s; /* Animation */
+  }
+
+  .hosting-offers h3 {
+    font-size: 2vw;
+  }
+
+  .hosting-offers p {
+    font-size: 1.8vw;
+  }
+
+  .hosting-offers img {
+    height: 120px;
+  }
+
+  .hosting-offers:hover {
+    transform: scale(1.1);
+  }
+
+  .hosting-description {
+    flex-wrap: wrap;
+    padding-right: 5px;
+  }
+
+  /* Images spécifiques de chaque offre populaire - Affichage images mobile */
+  .hotel-soleil {
+    content: url("../src/images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+  }
+
+  .coeur-eau {
+    content: url("../src/images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg");
+  }
+
+  .bleu-blanc {
+    content: url("../src/images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+  }
+
+  /* Hébergements */
+
+  .marseille-hostings {
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    padding: 5%;
+    margin: 16px 0px 0px 0px;
+    width: 90vw;
+    padding-bottom: 35px;
+  }
+
+  .available-offers {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .available-offers h3 {
+    font-size: 2vw;
+  }
+
+  .available-offers p {
+    font-size: 1.5vw;
+  }
+
+  .available-hostings {
+    width: 30vw;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: transform 0.2s; /* Animation */
+  }
+
+  .available-hostings img {
+    height: 15vw;
+  }
+
+  /* Images spécifiques de chaque offre - Affichage images mobile */
+  .cannebiere {
+    content: url("../src/images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+  }
+
+  .hotel-port {
+    content: url("../src/images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+  }
+
+  .hotel-mouettes {
+    content: url("../src/images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+  }
+
+  .hotel-mer {
+    content: url("../src/images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+  }
+
+  .auberge-panier {
+    content: url("../src/images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+  }
+
+  .hotel-amina {
+    content: url("../src/images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+  }
+
+  /* Fin des images */
+
+  .available-hostings:hover {
+    transform: scale(1.1);
+  }
+
+  .more-button {
+    padding-top: 35px;
+    margin: 35px 35px;
+  }
+
+  /* Activités */
+
+  #activities {
+    padding: 15px 0px;
+    width: 95vw;
+  }
+
+  #activities article {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #activities article a img {
+    height: 24vw;
+  }
+
+  /* Images spécifiques de chaque activité - Affichage images mobile */
+.vieux-port {
+  content: url("../src/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+}
+
+.fort-pomegues {
+  content: url("../src/images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+}
+
+.iles-frioul {
+  content: url("../src/images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+}
+
+.parc-calanques {
+  content: url("../src/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+}
+
+.dame-garde {
+  content: url("../src/images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+}
+
+.parc-longchamp {
+  content: url("../src/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+}
+
+/* Fin des images */
+
+  #activities article .pomegues-frioul .fort-pomegues {
+    height: 12vw;
+  }
+
+  #activities article .pomegues-frioul .iles-frioul {
+    height: 7vw;
+  }
+
+  #activities article .garde-longchamp .dame-garde {
+    height: 7vw;
+  }
+
+  #activities article .garde-longchamp .parc-longchamp {
+    height: 12vw;
+    margin-right: 0px;
+  }
+
+  #activities article .garde-longchamp {
+    margin-right: 0px;
+  }
+
+  #activities a {
+    width: 20vw;
+    margin-left: 0%;
+    transition: transform 0.2s; /* Animation */
+  }
+
+  #activities a:hover {
+    transform: scale(1.1);
+  }
+
+  #activities div {
+    width: 20vw;
+    margin: auto;
+  }
+
+  #activities div figure {
+    transition: transform 0.2s; /* Animation */
+  }
+
+  #activities div figure:hover {
+    transform: scale(1.1);
+  }
+
+  .activities-location {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #f2f2f2;
+    margin: 0px 15px 0px 0px;
+  }
+
+  .activities-location h3 {
+    margin: 1em;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .activities-location img {
+    object-fit: cover;
+    height: 9em;
+    width: 100%;
+    margin-right: 2em;
+    border-radius: 15px 15px 0% 0%;
+  }
+
+  footer {
+    display: flex;
+    background-color: #f2f2f2;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  footer div {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: auto;
+    margin: auto;
+    margin-left: 60px;
+    margin-bottom: 25px;
+  }
+
+  footer h3 {
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+
+  footer a {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 2em;
+    margin-left: 0px;
+  }
+}
+
+/* Fin du code CSS 768px min.*/
+/*////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////*/
+/* Code dédié aux écrans d'une résolution minimale de 1025px */
+
 /* CSS de la page pour les écrans dont la largeur fait au minimum 1024px */
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   header {
     padding-top: 0px;
     flex-wrap: nowrap;
@@ -889,6 +1226,7 @@ footer a {
   }
 
   footer {
+    display: flex;
     background-color: #f2f2f2;
     padding-top: 35px;
     padding-bottom: 35px;
@@ -898,8 +1236,9 @@ footer a {
     display: flex;
     flex-direction: column;
     align-content: space-between;
-    width: 90%;
+    width: auto;
     margin: auto;
+    margin-left: 60px;
     margin-bottom: 25px;
   }
 
