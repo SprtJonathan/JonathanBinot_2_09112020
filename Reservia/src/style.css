@@ -563,7 +563,7 @@ footer a {
     width: fit-content;
     border-radius: 18px;
   }
-  
+
   #user-position {
     border-radius: 15px 0px 0px 15px;
   }
@@ -646,15 +646,15 @@ footer a {
 
   /* Images spécifiques de chaque offre populaire - Affichage images mobile */
   .hotel-soleil {
-    content: url("../src/images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    content: url("../src/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
   }
 
   .coeur-eau {
-    content: url("../src/images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    content: url("../src/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg");
   }
 
   .bleu-blanc {
-    content: url("../src/images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    content: url("../src/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
   }
 
   /* Hébergements */
@@ -664,7 +664,7 @@ footer a {
     border-radius: 25px;
     padding: 5%;
     margin: 16px 0px 0px 0px;
-    padding-bottom: 35px;;
+    padding-bottom: 35px;
   }
 
   .available-offers {
@@ -694,27 +694,27 @@ footer a {
 
   /* Images spécifiques de chaque offre - Affichage images mobile */
   .cannebiere {
-    content: url("../src/images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    content: url("../src/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
   }
 
   .hotel-port {
-    content: url("../src/images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    content: url("../src/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
   }
 
   .hotel-mouettes {
-    content: url("../src/images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    content: url("../src/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg");
   }
 
   .hotel-mer {
-    content: url("../src/images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    content: url("../src/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
   }
 
   .auberge-panier {
-    content: url("../src/images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    content: url("../src/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
   }
 
   .hotel-amina {
-    content: url("../src/images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    content: url("../src/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
   }
 
   /* Fin des images */
@@ -731,8 +731,7 @@ footer a {
   /* Activités */
 
   #activities {
-    padding: 15px 0px;
-    width: 95vw;
+    width: 90vw;
   }
 
   #activities article {
@@ -741,50 +740,55 @@ footer a {
   }
 
   #activities article a img {
-    height: 24vw;
+    height: 28vw;
   }
 
   /* Images spécifiques de chaque activité - Affichage images mobile */
-.vieux-port {
-  content: url("../src/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
-}
+  .vieux-port {
+    content: url("../src/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    object-position: -90px;
+  }
 
-.fort-pomegues {
-  content: url("../src/images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-}
+  .fort-pomegues {
+    content: url("../src/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    object-position: 50% -47px;
+  }
 
-.iles-frioul {
-  content: url("../src/images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-}
+  .iles-frioul {
+    content: url("../src/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+  }
 
-.parc-calanques {
-  content: url("../src/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-}
+  .parc-calanques {
+    content: url("../src/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    object-position: -90px;
+  }
 
-.dame-garde {
-  content: url("../src/images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg");
-}
+  .dame-garde {
+    content: url("../src/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    object-position: 50% 0px;
+  }
 
-.parc-longchamp {
-  content: url("../src/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
-}
+  .parc-longchamp {
+    content: url("../src/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    object-position: 50% 0px;
+  }
 
-/* Fin des images */
+  /* Fin des images */
 
   #activities article .pomegues-frioul .fort-pomegues {
-    height: 12vw;
+    height: 13vw;
   }
 
   #activities article .pomegues-frioul .iles-frioul {
-    height: 7vw;
+    height: 8vw;
   }
 
   #activities article .garde-longchamp .dame-garde {
-    height: 7vw;
+    height: 8vw;
   }
 
   #activities article .garde-longchamp .parc-longchamp {
-    height: 12vw;
+    height: 13vw;
     margin-right: 0px;
   }
 
@@ -822,12 +826,12 @@ footer a {
     background-color: white;
     border-radius: 20px;
     box-shadow: 5px 5px 5px #f2f2f2;
-    margin: 0px 15px 0px 0px;
+    margin: 0px 6px 0px 0px;
   }
 
   .activities-location h3 {
     margin: 1em;
-    font-size: 16px;
+    font-size: 0.8em;
     font-weight: 700;
   }
 
@@ -835,25 +839,22 @@ footer a {
     object-fit: cover;
     height: 9em;
     width: 100%;
-    margin-right: 2em;
     border-radius: 15px 15px 0% 0%;
   }
 
   footer {
     display: flex;
+    flex-direction: row;
+    align-content: space-around;
     background-color: #f2f2f2;
     padding-top: 35px;
     padding-bottom: 35px;
   }
 
   footer div {
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    width: auto;
-    margin: auto;
-    margin-left: 60px;
-    margin-bottom: 25px;
+    display: block;
+    margin-left: 4em;
+    margin-top: 0px;
   }
 
   footer h3 {
@@ -862,9 +863,10 @@ footer a {
   }
 
   footer a {
+    display: inherit;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 2em;
+    font-size: 12px;
+    line-height: 25px;
     margin-left: 0px;
   }
 }
@@ -898,13 +900,13 @@ footer a {
   }
 
   nav {
-    max-width: 400px;
+    max-width: 300px;
     margin-top: 0px;
-    margin-left: 55vw;
+    margin-left: 47vw;
   }
 
   nav ul {
-    width: 400px;
+    width: 300px;
     text-align: center;
   }
 
@@ -971,7 +973,7 @@ footer a {
     margin-right: 35px;
     cursor: pointer;
     transition: ease-out 0.2s;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .filters-hosting button:hover {
@@ -1001,6 +1003,11 @@ footer a {
     margin: 2em 50vw 2em 0px;
   }
 
+  .most-popular {
+    font-size: 1.25em;
+    width: 80%;
+  }
+
   .popular-hostings {
     order: 2;
     width: 30%;
@@ -1023,7 +1030,7 @@ footer a {
   }
 
   .hosting-offers img {
-    height: 120px;
+    height: 140px;
   }
 
   .hosting-offers:hover {
@@ -1060,7 +1067,8 @@ footer a {
   }
 
   .marseille-hostings h2 {
-    margin-left: 16px;
+    margin-left: 22px;
+    font-size: 1.6em;
   }
 
   .available-offers {
@@ -1092,6 +1100,7 @@ footer a {
   /* Images spécifiques de chaque offre - Affichage images mobile */
   .cannebiere {
     content: url("../src/images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    size: 200%;
   }
 
   .hotel-port {
@@ -1120,9 +1129,12 @@ footer a {
     transform: scale(1.1);
   }
 
+  .popular-hostings article {
+    margin-bottom: 25px;
+  }
+
   .more-button {
-    padding-top: 35px;
-    margin: 35px 35px;
+    margin-left: 25px;
   }
 
   /* Activités */
@@ -1142,46 +1154,49 @@ footer a {
   }
 
   /* Images spécifiques de chaque activité - Affichage images mobile */
-.vieux-port {
-  content: url("../src/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
-}
+  .vieux-port {
+    content: url("../src/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    object-fit: contain;
+  }
 
-.fort-pomegues {
-  content: url("../src/images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-}
+  .fort-pomegues {
+    content: url("../src/images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    object-position: 50% -120px;
+  }
 
-.iles-frioul {
-  content: url("../src/images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-}
+  .iles-frioul {
+    content: url("../src/images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    object-position: 50% -10px;
+  }
 
-.parc-calanques {
-  content: url("../src/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-}
+  .parc-calanques {
+    content: url("../src/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+  }
 
-.dame-garde {
-  content: url("../src/images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg");
-}
+  .dame-garde {
+    content: url("../src/images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+  }
 
-.parc-longchamp {
-  content: url("../src/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
-}
+  .parc-longchamp {
+    content: url("../src/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+  }
 
-/* Fin des images */
+  /* Fin des images */
 
   #activities article .pomegues-frioul .fort-pomegues {
-    height: 12vw;
+    height: 11vw;
   }
 
   #activities article .pomegues-frioul .iles-frioul {
-    height: 7vw;
+    height: 8vw;
   }
 
   #activities article .garde-longchamp .dame-garde {
-    height: 7vw;
+    height: 8vw;
   }
 
   #activities article .garde-longchamp .parc-longchamp {
-    height: 12vw;
+    height: 11vw;
     margin-right: 0px;
   }
 
@@ -1244,18 +1259,9 @@ footer a {
   }
 
   footer div {
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
+    display: block;
     width: auto;
-    margin: auto;
-    margin-left: 60px;
     margin-bottom: 25px;
-  }
-
-  footer h3 {
-    margin-left: 0px;
-    margin-bottom: 10px;
   }
 
   footer a {
@@ -1263,5 +1269,99 @@ footer a {
     font-size: 15px;
     line-height: 2em;
     margin-left: 0px;
+    display: inherit;
   }
 }
+
+/* Fin du code CSS 1025px min.*/
+/*////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////*/
+/* Code dédié aux écrans d'une résolution minimale de 1200px */
+
+/* CSS de la page pour les écrans dont la largeur fait au minimum 1200px */
+
+@media (min-width: 1200px) {
+  nav {
+    max-width: 300px;
+    margin-top: 0px;
+    margin-left: 53vw;
+  }
+
+  .filters-hosting button {
+    margin-right: 35px;
+    cursor: pointer;
+    transition: ease-out 0.2s;
+    font-size: 18px;
+  }
+}
+
+/* Fin du code CSS 1200px min.*/
+/*////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////*/
+/* Code dédié aux écrans d'une résolution minimale de 1440px */
+
+/* CSS de la page pour les écrans dont la largeur fait au minimum 1440px */
+
+@media (min-width: 1440px) {
+  nav {
+    max-width: 300px;
+    margin-top: 0px;
+    margin-left: 60vw;
+  }
+}
+
+/* Fin du code CSS 1440px min.*/
+/*////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////*/
+/* Code dédié aux écrans d'une résolution minimale de 1920px */
+
+/* CSS de la page pour les écrans dont la largeur fait au minimum 1920px */
+
+@media (min-width: 1920px) {
+  nav {
+    max-width: 300px;
+    margin-top: 0px;
+    margin-left: 68vw;
+  }
+}
+
+
+/* Fin du code CSS 1920px min.*/
+/*////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////*/
+/* Code dédié aux écrans d'une résolution minimale de 2560px */
+
+/* CSS de la page pour les écrans dont la largeur fait au minimum 2560px */
+
+@media (min-width: 2560px) {
+  nav {
+    max-width: 300px;
+    margin-top: 0px;
+    margin-left: 75vw;
+  }
+}
+
