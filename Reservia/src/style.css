@@ -1008,6 +1008,10 @@ footer a {
     width: 80%;
   }
 
+  .most-popular-title {
+    margin: 5px 0px 5px 0px; 
+  }
+  
   .popular-hostings {
     order: 2;
     width: 30%;
@@ -1017,20 +1021,26 @@ footer a {
 
   .hosting-offers {
     width: 80%;
-    margin-bottom: 2.5vw;
+    margin-bottom: 2.3vw;
     transition: transform 0.2s; /* Animation */
   }
 
   .hosting-offers h3 {
-    font-size: 1.3vw;
+    font-size: 1.1vw;
   }
 
   .hosting-offers p {
-    font-size: 1.1vw;
+    font-size: 1vw;
+    line-height: 0px;
+    padding-bottom: 30px;
   }
 
   .hosting-offers img {
     height: 140px;
+  }
+
+  .hosting-offers figcaption {
+    margin: 0px 18px 10px 0px;
   }
 
   .hosting-offers:hover {
@@ -1134,7 +1144,9 @@ footer a {
   }
 
   .more-button {
-    margin-left: 25px;
+    width: fit-content;
+    padding-top: 0px;
+    margin-bottom: 0px;
   }
 
   /* Activités */
