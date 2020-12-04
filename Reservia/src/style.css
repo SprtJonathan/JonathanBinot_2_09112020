@@ -1036,7 +1036,7 @@ footer a {
   }
 
   .hosting-offers img {
-    height: 140px;
+    height: 135px;
   }
 
   .hosting-offers figcaption {
@@ -1077,8 +1077,8 @@ footer a {
   }
 
   .marseille-hostings h2 {
-    margin-left: 22px;
-    font-size: 1.6em;
+    margin: 1.5em 0px 1.5em 22px;
+    font-size: 1.8em;
   }
 
   .available-offers {
@@ -1209,11 +1209,14 @@ footer a {
 
   #activities article .garde-longchamp .parc-longchamp {
     height: 11vw;
-    margin-right: 0px;
+  }
+
+  #activities article .pomegues-frioul {
+    margin-left: 0px;
   }
 
   #activities article .garde-longchamp {
-    margin-right: 0px;
+    margin: 0px;
   }
 
   #activities a {
@@ -1273,7 +1276,9 @@ footer a {
   footer div {
     display: block;
     width: auto;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
+    margin-left: 3em;
+    margin-right: 20em;
   }
 
   footer a {
@@ -1352,6 +1357,34 @@ footer a {
     max-width: 300px;
     margin-top: 0px;
     margin-left: 68vw;
+  }
+
+  .vieux-port {
+    content: url("../src/images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    object-fit: contain;
+    object-position: 50% 0px;
+  }
+
+  .fort-pomegues {
+    content: url("../src/images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    object-position: 50% -160px;
+  }
+
+  .iles-frioul {
+    content: url("../src/images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    object-position: 50% -10px;
+  }
+
+  .parc-calanques {
+    content: url("../src/images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+  }
+
+  .dame-garde {
+    content: url("../src/images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+  }
+
+  .parc-longchamp {
+    content: url("../src/images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
   }
 }
 
