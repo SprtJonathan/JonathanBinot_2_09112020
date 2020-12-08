@@ -315,7 +315,7 @@ form.location-box input[type="text"] {
 .hosting-offers img {
   object-fit: cover;
   height: 10em;
-  width: 10em;
+  width: 9em;
   margin-right: 1em;
   border-radius: 15px 0% 0% 15px;
 }
@@ -487,12 +487,12 @@ form.location-box input[type="text"] {
 
 .fort-pomegues {
   content: url("../src/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-  object-position: 100% 45%;
+  object-position: 100% 42%;
 }
 
 .iles-frioul {
   content: url("../src/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-  object-position: 100% 20%;
+  object-position: 100% 10%;
 }
 
 .parc-calanques {
@@ -507,7 +507,7 @@ form.location-box input[type="text"] {
 
 .parc-longchamp {
   content: url("../src/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
-  object-position: 100% 30%;
+  object-position: 100% 25%;
 }
 
 /* Fin des images */
@@ -539,22 +539,6 @@ footer a {
   margin-left: 0px;
 }
 
-/* Taille minimale : 425px */
-
-@media (min-width: 375px) {
-  .filters-hosting button {
-    font-size: 14px;
-    margin: 0.5em 0.5em 0.5em 0px;
-    padding: 0px 25px 0px 0px;
-  }
-  
-  .filters-hosting button i {
-    padding: 15px;
-    margin: 0% 2vw 0% 0%;
-    width: 1em;
-  }
-}
-
 /* Fin du code CSS Principal. La suite concerne les différentes tailles d'écrans*/
 /*////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
@@ -564,190 +548,481 @@ footer a {
 //////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////*/
-/* Code dédié aux écrans d'une résolution minimale de 768px */
+/* Code dédié aux écrans mobiles de résolution supérieure à 320px */
+
+/* Taille minimale : 375px */
+
+@media (min-width: 375px) {
+  .filters-hosting button {
+    font-size: 14px;
+    margin: 0.5em 0.5em 0.5em 0px;
+    padding: 0px 25px 0px 0px;
+  }
+
+  .filters-hosting button i {
+    padding: 15px;
+    margin: 0% 2vw 0% 0%;
+    width: 1em;
+  }
+
+  .hosting-offers img {
+    width: 10em;
+  }
+}
+
+/* Taille minimale : 425px */
+
+@media (min-width: 425px) {
+  .filters-hosting button {
+    font-size: 15px;
+    margin: 0.5em 0.5em 0.5em 0px;
+    padding: 0px 25px 0px 0px;
+  }
+
+  .filters-hosting button i {
+    padding: 15px;
+    margin: 0% 2vw 0% 0%;
+    width: 1em;
+  }
+
+  .hosting-offers img {
+    width: 13em;
+    height: 12em;
+  }
+
+  .hosting-offers p {
+    margin-bottom: 55px;
+  }
+}
+
+/* Fin du code CSS pour mobiles */
+/*////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////*/
+/* Code dédié aux écrans tablettes d'une résolution minimale de 768px */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  header li {
-    font-size: 25px;
+  header {
+    padding-top: 0px;
+    flex-wrap: nowrap;
+    width: 92vw;
+    justify-content: space-around;
+  }
+
+  .website-logo {
+    margin-left: 15px;
+  }
+
+  header :nth-child(2) {
+    order: 2;
+  }
+
+  nav {
+    max-width: 300px;
+    margin-top: 0px;
+    margin-left: 190px;
+  }
+
+  nav ul {
+    width: 300px;
+    text-align: center;
+  }
+
+  li {
+    border-top: 3px solid;
+    border-color: #f2f2f2;
+    border-bottom: 0px transparent;
+    padding: 2.5vw 0px 2.5vw 0px;
+    text-align: center;
+    transition: ease-out 0.2s;
+  }
+
+  li:active > a {
+    color: #0065fc;
+  }
+
+  li:hover > a {
+    color: #0065fc;
+    border-color: #0065fc;
+  }
+
+  .register {
+    padding-bottom: 7px;
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 23px;
   }
 
-  .subtitle {
-    font-size: 25px;
+  #filters {
+    width: 92vw;
   }
+
+  /* Partie CSS des filtres */
 
   /* CSS de la barre de recherche de localisation */
 
   .location-box {
-    height: 60px;
-    border-radius: 25px;
+    width: fit-content;
+    border-radius: 18px;
   }
 
   #user-position {
-    border-radius: 20px 0px 0px 20px;
-    font-size: 25px;
-    width: 60px;
-  }
-
-  form.location-box input[type="text"] {
-    font-size: 25px;
+    border-radius: 15px 0px 0px 15px;
   }
 
   #loc-search-button {
-    width: 60px;
-    border-radius: 20px;
+    border-radius: 0px 17px 17px 0px;
+    transition: ease-out 0.2s;
   }
 
   #loc-search-button::after {
-    font-family: "Font Awesome 5 Free";
-    font-size: 25px;
-    font-weight: 600;
-    content: "\f002";
+    font-family: Raleway, sans-serif;
+    content: "Rechercher";
   }
 
-  .filters-title {
-    font-size: 25px;
+  #loc-search-button:hover {
+    background-color: #f2f2f2;
+    color: black;
+    cursor: pointer;
   }
 
   .filters-hosting button {
-    font-size: 20px;
-    padding: 0px 20px 0px 0px;
-    /*font-size: 15px;
-    margin: 0.5em 0.5em 0.5em 0px;
-    padding: 0px 10px 0px 0px; //Taille pour que les filtres soient sur la même ligne */ 
+    margin-right: 10px;
+    cursor: pointer;
+    transition: ease-out 0.2s;
+    font-size: 14px;
+    padding-right: 15px;
   }
 
-  .hostings-number i {
-    font-size: 15px;
+  .filters-hosting button i {
+    margin-right: 10px;
   }
 
-  .hostings-number h2 {
-    font-size: 20px;
+  .filters-hosting button:hover {
+    background-color: #deebff;
+  }
+
+  .filters-hosting button i:hover {
+    color: white;
+    background-color: #0065fc;
+  }
+
+  #filters .hostings-number {
+    align-self: flex-start;
+    font-size: 16px;
+  }
+
+  /* Partie CSS des hébergements populaires */
+  #hostings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    margin: auto;
+  }
+
+  .hostings-number {
+    margin: 2em 50vw 2em 2em;
+  }
+
+  .most-popular {
+    font-size: 1.25em;
+    width: 90%;
   }
 
   .most-popular-title {
-    font-size: 30px;
+    margin: 5px 0px 5px 0px;
   }
 
-  .popular-hostings figure {
+  .popular-hostings {
+    order: 0;
+    width: 100%;
     border-radius: 25px;
+    margin-left: 0px;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 
-  .popular-hostings img {
-    height: 200px;
-    width: 200px;
-    padding: 3px;
-    border-radius: 25px 0px 0px 25px;
+  .hosting-offers {
+    width: 50vw;
+    margin-bottom: 2vw;
+    transition: transform 0.2s; /* Animation */
   }
 
-  .popular-hostings figcaption {
-    margin-top: 3vw;
+  .hosting-offers h3 {
+    font-size: 1.7vw;
   }
 
-  .popular-hostings h3 {
-    font-size: 25px;
+  .hosting-offers p {
+    font-size: 1.3vw;
+    line-height: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 70px;
+  }
+  .hosting-offers figcaption {
+    margin: 0px 12px 10px 0px;
   }
 
-  .popular-hostings p {
-    font-size: 20px;
-    margin-top: 15px;
+  .hosting-offers:hover {
+    transform: scale(1.1);
   }
 
-  .stars-rating {
-    font-size: 20px;
-    margin-top: 3vw;
+  .hosting-description {
+    flex-wrap: wrap;
+    padding-right: 5px;
   }
 
-  .marseille-hostings figure {
+  /* Images spécifiques de chaque offre populaire - Affichage images mobile */
+  .hotel-soleil {
+    content: url("../src/images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+  }
+
+  .coeur-eau {
+    content: url("../src/images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg");
+  }
+
+  .bleu-blanc {
+    content: url("../src/images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+  }
+
+  /* Hébergements */
+
+  .marseille-hostings {
     border-radius: 25px;
+    padding: 15px;
+    margin: 0px 5px 0px 0px;
+    width: 100vw;
+    padding-bottom: 35px;
   }
 
   .marseille-hostings h2 {
-    font-size: 30px;
+    margin: 1.5em 0px 1.5em 22px;
+    font-size: 1.8em;
   }
 
-  .marseille-hostings img {
-    height: 250px;
-    border-radius: 20px 20px 0px 0px;
+  .available-offers {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
   }
 
-  .marseille-hostings h3 {
-    font-size: 25px;
-    margin-top: 15px;
+  .available-offers h3 {
+    font-size: 1.7vw;
   }
 
-  .marseille-hostings p {
-    font-size: 20px;
-    margin-top: 25px;
+  .available-offers p {
+    font-size: 1.3vw;
   }
 
-  .marseille-hostings i {
-    margin: 15px 0px 15px 0px;
+  .available-hostings {
+    width: 35vw;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: transform 0.2s; /* Animation */
   }
 
-  #activities h2 {
-    font-size: 30px;
+  .available-hostings img {
+    height: 18vw;
   }
 
-  .activities-location img {
-    height: 250px;
+  .more-button {
+    padding-top: 35px;
+    margin: 35px 35px;
   }
 
-  .activities-location h3 {
-    font-size: 25px;
+  /* Images spécifiques de chaque offre - Affichage images mobile */
+  .cannebiere {
+    content: url("../src/images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
   }
 
+  .hotel-port {
+    content: url("../src/images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+  }
+
+  .hotel-mouettes {
+    content: url("../src/images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+  }
+
+  .hotel-mer {
+    content: url("../src/images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+  }
+
+  .auberge-panier {
+    content: url("../src/images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+  }
+
+  .hotel-amina {
+    content: url("../src/images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+  }
+
+  /* Fin des images */
+
+  .available-hostings:hover {
+    transform: scale(1.1);
+  }
+
+  .popular-hostings article {
+    margin-bottom: 25px;
+  }
+
+  .more-button {
+    width: fit-content;
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  /* Activités */
+
+  #activities {
+    padding: 15px 0px;
+    width: 92vw;
+  }
+
+  #activities article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #activities article a img {
+    height: 36vw;
+  }
+
+  /* Images spécifiques de chaque activité - Affichage images mobile */
   .vieux-port {
-    object-position: 50% -50px;
+    content: url("../src/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    object-fit: contain;
+    object-position: 50%;
   }
 
   .fort-pomegues {
-    object-position: 50% -400px;
+    content: url("../src/images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    object-position: 50% -170px;
   }
 
   .iles-frioul {
-    object-position: 50% -50px;
+    content: url("../src/images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    object-position: 50% -60px;
   }
 
   .parc-calanques {
-    object-position: 50% -150px;
+    content: url("../src/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+  }
+
+  .dame-garde {
+    content: url("../src/images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg");
   }
 
   .parc-longchamp {
-    object-position: 50% -120px;
+    content: url("../src/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    object-position: 50% -80px;
   }
 
-  footer h3 {
-    font-size: 20px;
+  /* Fin des images */
+
+  #activities article .pomegues-frioul .fort-pomegues {
+    height: 15vw;
   }
 
-  footer p {
-    font-size: 15px;
+  #activities article .pomegues-frioul .iles-frioul {
+    height: 10vw;
+  }
+
+  #activities article .garde-longchamp .dame-garde {
+    height: 16vw;
+  }
+
+  #activities article .garde-longchamp .parc-longchamp {
+    height: 11vw;
+  }
+
+  #activities article .pomegues-frioul {
+    margin: auto;
+  }
+
+  #activities article .garde-longchamp {
+    margin: auto;
+  }
+
+  #activities a {
+    width: 40vw;
+    margin-left: 0%;
+    transition: transform 0.2s; /* Animation */
+  }
+
+  #activities a:hover {
+    transform: scale(1.1);
+  }
+
+  #activities div {
+    width: 40vw;
+    margin: auto;
+  }
+
+  #activities div figure {
+    transition: transform 0.2s; /* Animation */
+  }
+
+  #activities div figure:hover {
+    transform: scale(1.1);
+  }
+
+  .activities-location {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #f2f2f2;
+    margin: 0px 15px 0px 0px;
+  }
+
+  .activities-location h3 {
+    margin: 1em;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .activities-location img {
+    object-fit: cover;
+    height: 9em;
+    width: 100%;
+    margin-right: 2em;
+    border-radius: 15px 15px 0% 0%;
   }
 }
 
 @media (min-width: 1024px) {
+
+  nav {
+    margin-left: 420px;
+  }
+
   .vieux-port {
-    object-position: 50% -120px;
+    object-position: 50% 0px;
   }
 
   .fort-pomegues {
-    object-position: 50% -600px;
+    object-position: 50% -230px;
   }
 
   .iles-frioul {
-    object-position: 50% -150px;
+    object-position: 50% -80px;
   }
 
   .parc-calanques {
-    object-position: 50% -250px;
+    object-position: 50% 0px;
   }
 
   .parc-longchamp {
-    object-position: 50% -220px;
+    object-position: 50% -100px;
   }
 }
 
@@ -856,7 +1131,11 @@ footer a {
     margin-right: 35px;
     cursor: pointer;
     transition: ease-out 0.2s;
-    font-size: 16px;
+    font-size: 14px;
+  }
+
+  .filters-hosting button i {
+    margin-right: 15px;
   }
 
   .filters-hosting button:hover {
@@ -914,12 +1193,13 @@ footer a {
 
   .hosting-offers p {
     font-size: 1vw;
-    line-height: 0px;
-    padding-bottom: 30px;
+    line-height: 10px;
+    padding-bottom: 25px;
   }
 
   .hosting-offers img {
     height: 135px;
+    width: 135px;
   }
 
   .hosting-offers figcaption {
@@ -998,7 +1278,6 @@ footer a {
   /* Images spécifiques de chaque offre - Affichage images mobile */
   .cannebiere {
     content: url("../src/images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-    size: 200%;
   }
 
   .hotel-port {
@@ -1203,7 +1482,7 @@ footer a {
     margin-right: 35px;
     cursor: pointer;
     transition: ease-out 0.2s;
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
