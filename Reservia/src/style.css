@@ -205,10 +205,10 @@ form.location-box input[type="text"] {
   border: 2px solid #f2f2f2;
   border-left: 1px solid transparent;
   border-radius: 5em;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   margin: 0.5em 0.5em 0.5em 0px;
-  padding: 0px 35px 0px 0px;
+  padding: 0px 10px 0px 0px;
   white-space: nowrap;
 }
 
@@ -219,8 +219,8 @@ form.location-box input[type="text"] {
   border: 0px solid;
   border-radius: 50%;
   padding: 15px;
-  margin: 0% 10% 0% 0%;
-  width: 16px;
+  margin: 0% 2vw 0% 0%;
+  width: 15px;
   text-align: center;
   white-space: nowrap;
 }
@@ -539,6 +539,22 @@ footer a {
   margin-left: 0px;
 }
 
+/* Taille minimale : 425px */
+
+@media (min-width: 375px) {
+  .filters-hosting button {
+    font-size: 14px;
+    margin: 0.5em 0.5em 0.5em 0px;
+    padding: 0px 25px 0px 0px;
+  }
+  
+  .filters-hosting button i {
+    padding: 15px;
+    margin: 0% 2vw 0% 0%;
+    width: 1em;
+  }
+}
+
 /* Fin du code CSS Principal. La suite concerne les différentes tailles d'écrans*/
 /*////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
@@ -598,6 +614,10 @@ footer a {
 
   .filters-hosting button {
     font-size: 20px;
+    padding: 0px 20px 0px 0px;
+    /*font-size: 15px;
+    margin: 0.5em 0.5em 0.5em 0px;
+    padding: 0px 10px 0px 0px; //Taille pour que les filtres soient sur la même ligne */ 
   }
 
   .hostings-number i {
@@ -680,12 +700,54 @@ footer a {
     font-size: 25px;
   }
 
+  .vieux-port {
+    object-position: 50% -50px;
+  }
+
+  .fort-pomegues {
+    object-position: 50% -400px;
+  }
+
+  .iles-frioul {
+    object-position: 50% -50px;
+  }
+
+  .parc-calanques {
+    object-position: 50% -150px;
+  }
+
+  .parc-longchamp {
+    object-position: 50% -120px;
+  }
+
   footer h3 {
     font-size: 20px;
   }
 
   footer p {
     font-size: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .vieux-port {
+    object-position: 50% -120px;
+  }
+
+  .fort-pomegues {
+    object-position: 50% -600px;
+  }
+
+  .iles-frioul {
+    object-position: 50% -150px;
+  }
+
+  .parc-calanques {
+    object-position: 50% -250px;
+  }
+
+  .parc-longchamp {
+    object-position: 50% -220px;
   }
 }
 
@@ -1163,6 +1225,36 @@ footer a {
     max-width: 300px;
     margin-top: 0px;
     margin-left: 60vw;
+  }
+
+  .vieux-port {
+    content: url("../src/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    object-fit: contain;
+    object-position: 50% 0px;
+  }
+
+  .fort-pomegues {
+    content: url("../src/images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    object-position: 50% -160px;
+  }
+
+  .iles-frioul {
+    content: url("../src/images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    object-position: 50% -10px;
+  }
+
+  .parc-calanques {
+    content: url("../src/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    object-position: 50% 0px;
+  }
+
+  .dame-garde {
+    content: url("../src/images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+  }
+
+  .parc-longchamp {
+    content: url("../src/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    object-position: 50% 0px;
   }
 }
 
