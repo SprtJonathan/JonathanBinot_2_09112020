@@ -606,7 +606,7 @@ footer a {
 ////////////////////////////////////////////////////////////////////////////////*/
 /* Code dédié aux écrans tablettes d'une résolution minimale de 768px */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   header {
     padding-top: 0px;
     flex-wrap: nowrap;
@@ -1026,7 +1026,29 @@ footer a {
   }
 }
 
-/* Fin du code CSS 768px min à 1024 max.*/
+/* Fin du code CSS 768px min.*/
+/*////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////*/
+/* Code dédié aux écrans d'une résolution minimale de 1024px */
+
+@media (min-width: 1024px) {
+  #activities article .pomegues-frioul .fort-pomegues {
+    height: 17vw;
+  }
+
+  #activities article .pomegues-frioul .iles-frioul {
+    height: 12vw;
+  }
+}
+
+
+/* Fin du code CSS 768px min.*/
 /*////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
@@ -1195,6 +1217,7 @@ footer a {
     font-size: 1vw;
     line-height: 10px;
     padding-bottom: 25px;
+    margin-bottom: 15px;
   }
 
   .hosting-offers img {
@@ -1329,7 +1352,7 @@ footer a {
   }
 
   #activities article a img {
-    height: 24vw;
+    height: 25vw;
   }
 
   /* Images spécifiques de chaque activité - Affichage images mobile */
@@ -1368,7 +1391,7 @@ footer a {
   }
 
   #activities article .pomegues-frioul .iles-frioul {
-    height: 8vw;
+    height: 9vw;
   }
 
   #activities article .garde-longchamp .dame-garde {
@@ -1447,6 +1470,7 @@ footer a {
     margin-bottom: 0px;
     margin-left: 6em;
     margin-right: 15em;
+    margin-top: 0px;
   }
 
   footer a {
@@ -1557,6 +1581,101 @@ footer a {
     margin-left: 68vw;
   }
 
+  .hosting-offers{
+    margin-bottom: 25px;
+  }
+
+  .hosting-offers img {
+    height: 9vw;
+    width: 9vw;
+  }
+
+  .hosting-offers h3 {
+    font-size: 20px;
+  }
+
+  .hosting-offers p {
+    font-size: 16px;
+    padding-bottom: 45px;
+  }
+
+  .marseille-hostings h3 {
+    font-size: 20px;
+  }
+
+  .marseille-hostings p {
+    font-size: 16px;
+  }
+
+  /* Images spécifiques de chaque offre populaire - Affichage images mobile */
+  .hotel-soleil {
+    content: url("../src/images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+  }
+
+  .coeur-eau {
+    content: url("../src/images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg");
+  }
+
+  .bleu-blanc {
+    content: url("../src/images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+  }
+
+  /* Images spécifiques de chaque offre - Affichage grand écran */
+  .cannebiere {
+    content: url("../src/images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+  }
+
+  .hotel-port {
+    content: url("../src/images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+  }
+
+  .hotel-mouettes {
+    content: url("../src/images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+  }
+
+  .hotel-mer {
+    content: url("../src/images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+  }
+
+  .auberge-panier {
+    content: url("../src/images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+  }
+
+  .hotel-amina {
+    content: url("../src/images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+  }
+
+  /* Fin des images */
+
+  /* Images spécifiques de chaque activité - Affichage images grand écran */
+  .vieux-port {
+    content: url("../src/images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    object-fit: contain;
+    object-position: 50%;
+  }
+
+  .fort-pomegues {
+    content: url("../src/images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    object-position: 50% -120px;
+  }
+
+  .iles-frioul {
+    content: url("../src/images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    object-position: 50% -10px;
+  }
+
+  .parc-calanques {
+    content: url("../src/images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+  }
+
+  .dame-garde {
+    content: url("../src/images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+  }
+
+  .parc-longchamp {
+    content: url("../src/images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+  }
+
   .vieux-port {
     content: url("../src/images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
     object-fit: contain;
@@ -1584,6 +1703,18 @@ footer a {
   .parc-longchamp {
     content: url("../src/images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
   }
+
+  #activities article .garde-longchamp .dame-garde {
+    height: 10vw;
+  }
+
+  #activities article .garde-longchamp .parc-longchamp {
+    height: 11vw;
+  }
+
+  footer div {
+    margin-right: 350px;
+  }
 }
 
 /* Fin du code CSS 1920px min.*/
@@ -1603,6 +1734,130 @@ footer a {
   nav {
     max-width: 300px;
     margin-top: 0px;
-    margin-left: 75vw;
+    margin-left: 73vw;
   }
+
+  header :nth-child(3) {
+    font-size: 20px;
+  }
+
+  nav li a{
+    font-size: 20px;
+  }
+
+  .register {
+    font-size: 20px;
+  }
+
+  .location-box
+  {
+    height: 2.5vw;
+  }
+
+  #user-position {
+    width: 2.5vw;
+  }
+
+  #user-position i {
+    font-size: 20px;
+  }
+
+  form.location-box input[type="text"] {
+    font-size: 20px;
+  }
+  
+  #loc-search-button::after {
+    font-size: 20px;
+  }
+
+  .filters-title {
+    font-size: 20px;
+  }
+
+  .filters-hosting button {
+    font-size: 20px;
+  }
+
+  .hostings-number h2 {
+    font-size: 15px;
+  }
+
+  .hostings-number i {
+    font-size: 15px;
+  }
+
+  .most-popular {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+
+  .most-popular i {
+    font-size: 25px;
+  }
+  
+  .popular-hostings figcaption {
+    margin-left: 15px;
+  }
+
+  .popular-hostings h3 {
+    font-size: 26px;
+  }
+
+  .popular-hostings p {
+    font-size: 20px;
+    padding-bottom: 80px;
+  }
+
+  .stars-rating {
+    font-size: 20px;
+  }
+
+  .marseille-hostings {
+    font-size: 15px;
+  }
+
+  .available-hostings h3 {
+    font-size: 23px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .available-hostings p {
+    font-size: 17px;
+    padding-bottom: 10px;
+  }
+
+  #activities h2 {
+    font-size: 30px;
+  }
+
+  .activities-location h3 {
+    font-size: 26px;
+  }
+
+  #activities article .garde-longchamp .dame-garde {
+    height: 10.5vw;
+  }
+
+  #activities article .garde-longchamp .parc-longchamp {
+    height: 10.5vw;
+  }
+
+  .fort-pomegues {
+    object-position: 50% -210px;
+  }
+
+  footer div {
+    margin-right: 20vw;
+  }
+
+  footer h3 {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+
+  footer a {
+    font-size: 18px;
+  }
+
 }
