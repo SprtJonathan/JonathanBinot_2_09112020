@@ -344,7 +344,7 @@ form.location-box input[type="text"] {
 /* Notes des offres */
 .stars-rating {
   font-size: 12px;
-  color: #f2f2f2;
+  color: #eeeeee;
 }
 
 .checked {
@@ -1000,7 +1000,6 @@ footer a {
 }
 
 @media (min-width: 1024px) {
-
   nav {
     margin-left: 420px;
   }
@@ -1046,7 +1045,6 @@ footer a {
     height: 12vw;
   }
 }
-
 
 /* Fin du code CSS 768px min.*/
 /*////////////////////////////////////////////////////////////////////////////////
@@ -1198,7 +1196,7 @@ footer a {
 
   .popular-hostings {
     order: 2;
-    width: 30%;
+    width: 35%;
     border-radius: 25px;
     margin-left: 0px;
   }
@@ -1221,8 +1219,8 @@ footer a {
   }
 
   .hosting-offers img {
-    height: 135px;
-    width: 135px;
+    height: 8.2em;
+    width: 8.2em;
   }
 
   .hosting-offers figcaption {
@@ -1258,7 +1256,7 @@ footer a {
     border-radius: 25px;
     padding: 15px;
     margin: 0px 5px 0px 0px;
-    width: 60vw;
+    width: 55vw;
     padding-bottom: 35px;
   }
 
@@ -1364,7 +1362,7 @@ footer a {
 
   .fort-pomegues {
     content: url("../src/images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-    object-position: 50% -120px;
+    object-position: 50% -100px;
   }
 
   .iles-frioul {
@@ -1382,6 +1380,7 @@ footer a {
 
   .parc-longchamp {
     content: url("../src/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    object-position: 50% 0px;
   }
 
   /* Fin des images */
@@ -1445,7 +1444,7 @@ footer a {
 
   .activities-location h3 {
     margin: 1em;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 700;
   }
 
@@ -1468,8 +1467,8 @@ footer a {
     display: block;
     width: auto;
     margin-bottom: 0px;
-    margin-left: 6em;
-    margin-right: 15em;
+    margin-left: 3em;
+    margin-right: 8em;
     margin-top: 0px;
   }
 
@@ -1502,14 +1501,31 @@ footer a {
     margin-left: 53vw;
   }
 
+  .hosting-offers img {
+    height: 9em;
+    width: 9em;
+  }
+
   .filters-hosting button {
     margin-right: 35px;
     cursor: pointer;
     transition: ease-out 0.2s;
     font-size: 16px;
   }
+
+  footer div {
+    margin-left: 5em;
+    margin-right: 10em;
+  }
 }
 
+@media (min-width: 1280px)
+ {
+   .hosting-offers img {
+     width: 9.4em;
+     height: 9.4em;
+   }
+ }
 /* Fin du code CSS 1200px min.*/
 /*////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
@@ -1528,6 +1544,12 @@ footer a {
     max-width: 300px;
     margin-top: 0px;
     margin-left: 60vw;
+  }
+
+  .hosting-offers img {
+    height: 140px;
+    width: 140px;
+    margin-right: 20px;
   }
 
   .vieux-port {
@@ -1559,6 +1581,11 @@ footer a {
     content: url("../src/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
     object-position: 50% 0px;
   }
+
+  footer div {
+    margin-left: 6em;
+    margin-right: 15em;
+  }
 }
 
 /* Fin du code CSS 1440px min.*/
@@ -1581,7 +1608,7 @@ footer a {
     margin-left: 68vw;
   }
 
-  .hosting-offers{
+  .hosting-offers {
     margin-bottom: 25px;
   }
 
@@ -1741,7 +1768,7 @@ footer a {
     font-size: 20px;
   }
 
-  nav li a{
+  nav li a {
     font-size: 20px;
   }
 
@@ -1749,8 +1776,7 @@ footer a {
     font-size: 20px;
   }
 
-  .location-box
-  {
+  .location-box {
     height: 2.5vw;
   }
 
@@ -1765,7 +1791,7 @@ footer a {
   form.location-box input[type="text"] {
     font-size: 20px;
   }
-  
+
   #loc-search-button::after {
     font-size: 20px;
   }
@@ -1794,7 +1820,7 @@ footer a {
   .most-popular i {
     font-size: 25px;
   }
-  
+
   .popular-hostings figcaption {
     margin-left: 15px;
   }
@@ -1859,5 +1885,4 @@ footer a {
   footer a {
     font-size: 18px;
   }
-
 }
