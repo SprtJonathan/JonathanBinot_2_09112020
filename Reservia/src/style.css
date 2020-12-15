@@ -1057,8 +1057,8 @@ footer a {
 ////////////////////////////////////////////////////////////////////////////////*/
 /* Code dédié aux écrans d'une résolution minimale de 1025px */
 
-/* CSS de la page pour les écrans dont la largeur fait au minimum 1024px */
-@media (min-width: 1024px) {
+/* CSS de la page pour les écrans dont la largeur fait au minimum 1025px */
+@media (min-width: 1025px) {
   header {
     padding-top: 0px;
     flex-wrap: nowrap;
@@ -1535,11 +1535,11 @@ footer a {
 //////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////*/
-/* Code dédié aux écrans d'une résolution minimale de 1440px */
+/* Code dédié aux écrans d'une résolution minimale de 1400px */
 
-/* CSS de la page pour les écrans dont la largeur fait au minimum 1440px */
+/* CSS de la page pour les écrans dont la largeur fait au minimum 1400px */
 
-@media (min-width: 1440px) {
+@media (min-width: 1400px) {
   nav {
     max-width: 300px;
     margin-top: 0px;
@@ -1588,7 +1588,58 @@ footer a {
   }
 }
 
-/* Fin du code CSS 1440px min.*/
+@media (min-width: 1500px) {
+  .hosting-offers h3 {font-size: 18px;}
+}
+
+@media (min-width: 1600px) {
+  .hosting-offers h3 {font-size: 19px;}
+}
+
+@media (min-width: 1700px) {
+  .hosting-offers h3 {font-size: 20px;}
+  .hosting-offers img {
+    width: 9vw;
+    height: 9vw;
+  }
+}
+
+@media (min-width: 1800px) {
+  .filters-hosting button {
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  
+  .hosting-offers {
+    margin-bottom: 25px;
+  }
+
+  .hosting-offers img {
+    height: 10vw;
+    width: 10vw;
+  }
+
+  .hosting-offers figcaption {
+    margin-left: 20px;
+  }
+
+  .hosting-offers h3 {
+    font-size: 20px;
+  }
+
+  .hosting-offers p {
+    font-size: 18px;
+    padding-bottom: 45px;
+  }
+
+  .stars-rating{font-size: 18px;}
+
+  #activities .activities-location h3 {
+    font-size: 20px;
+  }
+}
+
+/* Fin du code CSS pour les petites tailles d'écran PC.*/
 /*////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
@@ -1601,11 +1652,17 @@ footer a {
 
 /* CSS de la page pour les écrans dont la largeur fait au minimum 1920px */
 
-@media (min-width: 1920px) {
+@media (min-width: 1900px) {
   nav {
     max-width: 300px;
     margin-top: 0px;
     margin-left: 68vw;
+  }
+
+  .filters-hosting button {
+    margin-left: 15px;
+    padding-right: 35px;
+    font-size: 18px;
   }
 
   .hosting-offers {
@@ -1613,12 +1670,16 @@ footer a {
   }
 
   .hosting-offers img {
-    height: 9vw;
-    width: 9vw;
+    height: 10vw;
+    width: 10vw;
+  }
+
+  .hosting-offers figcaption {
+    margin-left: 20px;
   }
 
   .hosting-offers h3 {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .hosting-offers p {
@@ -1626,12 +1687,25 @@ footer a {
     padding-bottom: 45px;
   }
 
+  .stars-rating {
+    font-size: 18px;
+  }
+
+  .marseille-hostings img {
+    height: 8.5vw;
+  }
+
   .marseille-hostings h3 {
     font-size: 20px;
+    margin-top: 15px;
   }
 
   .marseille-hostings p {
     font-size: 16px;
+  }
+
+  .available-hostings{
+    padding-bottom: 15px;
   }
 
   /* Images spécifiques de chaque offre populaire - Affichage images mobile */
@@ -1731,6 +1805,10 @@ footer a {
     content: url("../src/images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
   }
 
+  #activities h3 {
+    font-size: 20px;
+  }
+
   #activities article .garde-longchamp .dame-garde {
     height: 10vw;
   }
@@ -1822,11 +1900,12 @@ footer a {
   }
 
   .popular-hostings figcaption {
-    margin-left: 15px;
+    margin-left: 35px;
   }
 
   .popular-hostings h3 {
-    font-size: 26px;
+    font-size: 30px;
+    padding-right: 55px;
   }
 
   .popular-hostings p {
