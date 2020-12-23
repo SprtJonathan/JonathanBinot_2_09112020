@@ -1710,99 +1710,99 @@ footer a {
 
   /* Images spécifiques de chaque offre populaire - Affichage images mobile */
   .hotel-soleil {
-    content: url("../src/images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    content: url("../src/images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
   }
 
   .coeur-eau {
-    content: url("../src/images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    content: url("../src/images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg");
   }
 
   .bleu-blanc {
-    content: url("../src/images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    content: url("../src/images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
   }
 
   /* Images spécifiques de chaque offre - Affichage grand écran */
   .cannebiere {
-    content: url("../src/images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    content: url("../src/images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
   }
 
   .hotel-port {
-    content: url("../src/images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    content: url("../src/images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
   }
 
   .hotel-mouettes {
-    content: url("../src/images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    content: url("../src/images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg");
   }
 
   .hotel-mer {
-    content: url("../src/images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    content: url("../src/images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
   }
 
   .auberge-panier {
-    content: url("../src/images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    content: url("../src/images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
   }
 
   .hotel-amina {
-    content: url("../src/images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    content: url("../src/images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
   }
 
   /* Fin des images */
 
   /* Images spécifiques de chaque activité - Affichage images grand écran */
   .vieux-port {
-    content: url("../src/images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    content: url("../src/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
     object-fit: contain;
     object-position: 50%;
   }
 
   .fort-pomegues {
-    content: url("../src/images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    content: url("../src/images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
     object-position: 50% -120px;
   }
 
   .iles-frioul {
-    content: url("../src/images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    content: url("../src/images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
     object-position: 50% -10px;
   }
 
   .parc-calanques {
-    content: url("../src/images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    content: url("../src/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
   }
 
   .dame-garde {
-    content: url("../src/images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    content: url("../src/images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg");
   }
 
   .parc-longchamp {
-    content: url("../src/images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    content: url("../src/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
   }
 
   .vieux-port {
-    content: url("../src/images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    content: url("../src/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
     object-fit: contain;
     object-position: 50% 0px;
   }
 
   .fort-pomegues {
-    content: url("../src/images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    content: url("../src/images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
     object-position: 50% -160px;
   }
 
   .iles-frioul {
-    content: url("../src/images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    content: url("../src/images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
     object-position: 50% -10px;
   }
 
   .parc-calanques {
-    content: url("../src/images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    content: url("../src/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
   }
 
   .dame-garde {
-    content: url("../src/images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    content: url("../src/images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg");
   }
 
   .parc-longchamp {
-    content: url("../src/images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    content: url("../src/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
   }
 
   #activities h3 {
