@@ -30,6 +30,7 @@ header :nth-child(1) {
   margin-left: 15px;
 }
 
+/* Inversion du menu et du bouton s'inscrire pour l'affichage mobile */
 header :nth-child(2) {
   order: 3;
 }
@@ -44,6 +45,7 @@ header :nth-child(3) {
   margin-right: 15px;
 }
 
+/* Positionnement du menu */
 nav {
   max-width: 100vw;
   margin-top: 15px;
@@ -126,7 +128,7 @@ h3 {
   margin-left: 0px;
 }
 
-/* CSS de la barre de recherche de localisation */
+/* Style de la barre de recherche de localisation */
 .location-box {
   display: flex;
   align-content: space-around;
@@ -548,7 +550,7 @@ footer a {
 //////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////*/
-/* Code dédié aux écrans mobiles de résolution supérieure à 320px */
+/* Code dédié aux écrans mobiles de résolution supérieure à 375px */
 
 /* Taille minimale : 375px */
 
@@ -756,14 +758,14 @@ footer a {
   }
 
   .hosting-offers h3 {
-    font-size: 1.7vw;
+    font-size: 2vw;
   }
 
   .hosting-offers p {
-    font-size: 1.3vw;
+    font-size: 1.7vw;
     line-height: 10px;
     padding-bottom: 0px;
-    margin-bottom: 70px;
+    margin-bottom: 65px;
   }
   .hosting-offers figcaption {
     margin: 0px 12px 10px 0px;
@@ -778,17 +780,17 @@ footer a {
     padding-right: 5px;
   }
 
-  /* Images spécifiques de chaque offre populaire - Affichage images mobile */
+  /* Images spécifiques de chaque offre populaire - Affichage images tablette */
   .hotel-soleil {
-    content: url("../src/images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    content: url("../src/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
   }
 
   .coeur-eau {
-    content: url("../src/images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    content: url("../src/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg");
   }
 
   .bleu-blanc {
-    content: url("../src/images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    content: url("../src/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
   }
 
   /* Hébergements */
@@ -813,11 +815,11 @@ footer a {
   }
 
   .available-offers h3 {
-    font-size: 1.7vw;
+    font-size: 2vw;
   }
 
   .available-offers p {
-    font-size: 1.3vw;
+    font-size: 1.7vw;
   }
 
   .available-hostings {
@@ -837,25 +839,25 @@ footer a {
     margin: 35px 35px;
   }
 
-  /* Images spécifiques de chaque offre - Affichage images mobile */
+  /* Images spécifiques de chaque offre - Affichage images tablette */
   .cannebiere {
-    content: url("../src/images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    content: url("../src/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
   }
 
   .hotel-port {
-    content: url("../src/images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    content: url("../src/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
   }
 
   .hotel-mouettes {
-    content: url("../src/images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    content: url("../src/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg");
   }
 
   .hotel-mer {
-    content: url("../src/images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    content: url("../src/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
   }
 
   .auberge-panier {
-    content: url("../src/images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    content: url("../src/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
   }
 
   .hotel-amina {
@@ -895,33 +897,33 @@ footer a {
     height: 36vw;
   }
 
-  /* Images spécifiques de chaque activité - Affichage images mobile */
+  /* Images spécifiques de chaque activité - Affichage images tablette */
   .vieux-port {
-    content: url("../src/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    content: url("../src/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
     object-fit: contain;
     object-position: 50%;
   }
 
   .fort-pomegues {
-    content: url("../src/images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    content: url("../src/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
     object-position: 50% -170px;
   }
 
   .iles-frioul {
-    content: url("../src/images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    content: url("../src/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
     object-position: 50% -60px;
   }
 
   .parc-calanques {
-    content: url("../src/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    content: url("../src/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
   }
 
   .dame-garde {
-    content: url("../src/images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    content: url("../src/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg");
   }
 
   .parc-longchamp {
-    content: url("../src/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    content: url("../src/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
     object-position: 50% -80px;
   }
 
@@ -1046,7 +1048,7 @@ footer a {
   }
 }
 
-/* Fin du code CSS 768px min.*/
+/* Fin du code CSS 1024px min.*/
 /*////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
@@ -1055,7 +1057,7 @@ footer a {
 //////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////*/
-/* Code dédié aux écrans d'une résolution minimale de 1025px */
+/* Code dédié aux écrans d'une résolution minimale de 1025px : affichage desktop */
 
 /* CSS de la page pour les écrans dont la largeur fait au minimum 1025px */
 @media (min-width: 1025px) {
@@ -1236,7 +1238,7 @@ footer a {
     padding-right: 5px;
   }
 
-  /* Images spécifiques de chaque offre populaire - Affichage images mobile */
+  /* Images spécifiques de chaque offre populaire - Affichage images desktop */
   .hotel-soleil {
     content: url("../src/images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
   }
@@ -1296,7 +1298,7 @@ footer a {
     margin: 35px 35px;
   }
 
-  /* Images spécifiques de chaque offre - Affichage images mobile */
+  /* Images spécifiques de chaque offre - Affichage images desktop */
   .cannebiere {
     content: url("../src/images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
   }
@@ -1353,7 +1355,7 @@ footer a {
     height: 25vw;
   }
 
-  /* Images spécifiques de chaque activité - Affichage images mobile */
+  /* Images spécifiques de chaque activité - Affichage images desktop */
   .vieux-port {
     content: url("../src/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
     object-fit: contain;
@@ -1648,9 +1650,9 @@ footer a {
 //////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////*/
-/* Code dédié aux écrans d'une résolution minimale de 1920px */
+/* Code dédié aux écrans d'une résolution minimale de 1900px */
 
-/* CSS de la page pour les écrans dont la largeur fait au minimum 1920px */
+/* CSS de la page pour les écrans dont la largeur fait au minimum 1900px */
 
 @media (min-width: 1900px) {
   nav {
