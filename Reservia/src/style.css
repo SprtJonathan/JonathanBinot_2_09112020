@@ -1521,13 +1521,12 @@ footer a {
   }
 }
 
-@media (min-width: 1280px)
- {
-   .hosting-offers img {
-     width: 9.4em;
-     height: 9.4em;
-   }
- }
+@media (min-width: 1280px) {
+  .hosting-offers img {
+    width: 9.4em;
+    height: 9.4em;
+  }
+}
 /* Fin du code CSS 1200px min.*/
 /*////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
@@ -1591,15 +1590,21 @@ footer a {
 }
 
 @media (min-width: 1500px) {
-  .hosting-offers h3 {font-size: 18px;}
+  .hosting-offers h3 {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 1600px) {
-  .hosting-offers h3 {font-size: 19px;}
+  .hosting-offers h3 {
+    font-size: 19px;
+  }
 }
 
 @media (min-width: 1700px) {
-  .hosting-offers h3 {font-size: 20px;}
+  .hosting-offers h3 {
+    font-size: 20px;
+  }
   .hosting-offers img {
     width: 9vw;
     height: 9vw;
@@ -1611,7 +1616,7 @@ footer a {
     margin-left: 20px;
     font-size: 18px;
   }
-  
+
   .hosting-offers {
     margin-bottom: 25px;
   }
@@ -1634,7 +1639,9 @@ footer a {
     padding-bottom: 45px;
   }
 
-  .stars-rating{font-size: 18px;}
+  .stars-rating {
+    font-size: 18px;
+  }
 
   #activities .activities-location h3 {
     font-size: 20px;
@@ -1706,11 +1713,11 @@ footer a {
     font-size: 16px;
   }
 
-  .available-hostings{
+  .available-hostings {
     padding-bottom: 15px;
   }
 
-  /* Images spécifiques de chaque offre populaire - Affichage images mobile */
+  /* Images spécifiques de chaque offre populaire - Affichage images grand écran */
   .hotel-soleil {
     content: url("../src/images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
   }
